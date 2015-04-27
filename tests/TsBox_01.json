@@ -1,0 +1,25 @@
+{
+    "name": "TsBox_01",
+    "version": 0.1,
+    "description": "Score interactions with a divided TsBox using the same TsBox.",
+    "args": [
+        "TsBox_01.txt"
+    ],
+    "input_files": [
+        "TsBox_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/10x15pixels.header",
+        "phase_spaces/10x15pixels.phsp"
+    ],
+    "output_files": [
+        "tsbox01_charge.csv",
+        "tsbox01_edep.csv",
+        "tsbox01_effcharge.csv",
+        "tsbox01_energyfluence.csv",
+        "tsbox01_fluence.csv",
+        "tsbox01_kinetic.csv",
+        "tsbox01_stepcount.csv",
+        "tsbox01_surfacecurrent.csv",
+        "tsbox01_surfacetrackcount.csv"
+    ]
+}

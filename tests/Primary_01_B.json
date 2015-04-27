@@ -1,0 +1,17 @@
+{
+    "name": "Primary_01_B",
+    "version": 0.1,
+    "description": "Create phasespace using point source beam with x-y angular spread.",
+    "args": [
+        "Primary_01_B.txt"
+    ],
+    "input_files": [
+        "Primary_01_B.txt",
+        "Primary_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary01b_iso_asc.header",
+        "primary01b_iso_asc.phsp"
+    ]
+}

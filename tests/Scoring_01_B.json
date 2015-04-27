@@ -1,0 +1,29 @@
+{
+    "name": "Scoring_01_B",
+    "version": 0.1,
+    "description": "Score various quantities in a water tank, but with deactivated scorers (output should be null).",
+    "args": [
+        "Scoring_01_B.txt"
+    ],
+    "input_files": [
+        "Scoring_01_B.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1.header",
+        "phase_spaces/pixels_1x1.phsp"
+    ],
+    "output_files": [
+        "scoring01_charge_inactive.csv",
+        "scoring01_dose2material_inactive.csv",
+        "scoring01_dose2medium_inactive.csv",
+        "scoring01_dose2water_inactive.csv",
+        "scoring01_edep_inactive.csv",
+        "scoring01_effcharge_inactive.csv",
+        "scoring01_energyfluence_inactive.csv",
+        "scoring01_fluence_inactive.csv",
+        "scoring01_kinetic_inactive.csv",
+        "scoring01_stepcount_inactive.csv",
+        "scoring01_surfacecurrent_inactive.csv",
+        "scoring01_surfacetrackcount_inactive.csv"
+    ]
+}

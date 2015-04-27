@@ -1,0 +1,17 @@
+{
+    "name": "Phasespace_02",
+    "version": 0.1,
+    "description": "Read an ASCII phasespace file and send to TOPAS.",
+    "args": [
+        "Phasespace_02.txt"
+    ],
+    "input_files": [
+        "Phasespace_02.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1.header",
+        "phase_spaces/pixels_1x1.phsp"
+    ],
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

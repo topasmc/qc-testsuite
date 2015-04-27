@@ -1,0 +1,28 @@
+{
+    "name": "TsCylinder_02",
+    "version": 0.1,
+    "description": "Read phase space scored in divided TsCylinder.",
+    "args": [
+        "TsCylinder_02.txt"
+    ],
+    "input_files": [
+        "TsCylinder_02.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1_cylinder.header",
+        "phase_spaces/pixels_1x1_cylinder.phsp"
+    ],
+    "output_files": [
+        "tscylinder02_charge.csv",
+        "tscylinder02_dose2material.csv",
+        "tscylinder02_dose2medium.csv",
+        "tscylinder02_dose2water.csv",
+        "tscylinder02_edep.csv",
+        "tscylinder02_effcharge.csv",
+        "tscylinder02_energyfluence.csv",
+        "tscylinder02_fluence.csv",
+        "tscylinder02_kinetic.csv",
+        "tscylinder02_stepcount.csv",
+        "tscylinder02_surfacecurrent.csv",
+        "tscylinder02_surfacetrackcount.csv"
+    ]
+}

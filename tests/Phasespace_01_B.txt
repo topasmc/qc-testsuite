@@ -1,0 +1,2 @@
+includeFile = Phasespace_01.txt
+s:So/Default/PhaseSpaceFileName = "phase_spaces/LimitedOutput"

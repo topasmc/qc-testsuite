@@ -1,0 +1,22 @@
+{
+    "name": "Phasespace_02_A",
+    "version": 0.1,
+    "description": "Read an ASCII phasespace file and write a new ASCII phasespace file.",
+    "args": [
+        "Phasespace_02_A.txt"
+    ],
+    "input_files": [
+        "Phasespace_02_A.txt",
+        "Phasespace_02.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1.header",
+        "phase_spaces/pixels_1x1.phsp"
+    ],
+    "output_files": [
+        "phsp02_iso_asc.header",
+        "phsp02_iso_asc.phsp"
+    ],
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

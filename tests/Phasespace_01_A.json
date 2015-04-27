@@ -1,0 +1,18 @@
+{
+    "name": "Phasespace_01_A",
+    "version": 0.1,
+    "description": "Read a binary phasespace file.",
+    "args": [
+        "Phasespace_01_A.txt"
+    ],
+    "input_files": [
+        "Phasespace_01_A.txt",
+        "Phasespace_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/BinaryOutput.header",
+        "phase_spaces/BinaryOutput.phsp"
+    ],
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Phasespace_01",
+    "version": 0.1,
+    "description": "Read an ASCII phasespace file.",
+    "args": [
+        "Phasespace_01.txt"
+    ],
+    "input_files": [
+        "Phasespace_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/ASCIIOutput.header",
+        "phase_spaces/ASCIIOutput.phsp"
+    ],
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

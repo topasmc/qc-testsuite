@@ -1,0 +1,17 @@
+{
+    "name": "Primary_02_B",
+    "version": 0.1,
+    "description": "Create phasespace using rectangular beam with Gaussian angular spread.",
+    "args": [
+        "Primary_02_B.txt"
+    ],
+    "input_files": [
+        "Primary_02_B.txt",
+        "Primary_02.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary02b_iso_asc.header",
+        "primary02b_iso_asc.phsp"
+    ]
+}

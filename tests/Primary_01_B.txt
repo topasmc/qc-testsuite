@@ -1,0 +1,6 @@
+includeFile = Primary_01.txt
+
+d:So/Default/BeamAngularSpreadX     = 2.0 rad
+d:So/Default/BeamAngularSpreadY     = 1.0 rad
+
+s:Sc/PHSP_ISO/OutputFile		   = "primary01b_iso_asc"

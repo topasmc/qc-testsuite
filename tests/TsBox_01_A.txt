@@ -1,0 +1,73 @@
+includeFile = TsBox_01.txt #Viewer.txt
+
+
+#sv:Ph/Default/Modules =4 "EM_Standard" "Hadron_Elastic_Standard" "Hadron_Inelastic" "Ion"
+
+
+#Ts/PauseBeforeSequence = "True"
+
+Ts/PauseBeforeQuit = "False"
+
+i:So/Default/PhaseSpaceMultipleUse = 1
+
+sv:Ph/Default/LayeredMassGeometryWorlds = 1 "SDCylinder"
+
+
+s:Ge/SDCylinder/Material  = "parent"
+s:Ge/SDCylinder/Parent    = "Plane_ISO"
+#RMin not Rmin
+d:Ge/SDCylinder/RMin      = 0.0 cm
+d:Ge/SDCylinder/RMax      = 1.0 cm
+d:Ge/SDCylinder/SPhi      = 0.0 deg
+d:Ge/SDCylinder/DPhi      = 360.0 deg
+d:Ge/SDCylinder/HL        = 100.0 mm
+d:Ge/SDCylinder/TransZ    = 0.0 mm
+d:Ge/SDCylinder/TransY    = 0. m
+d:Ge/SDCylinder/TransX    = 0. m
+d:Ge/SDCylinder/RotX      = 0. deg
+d:Ge/SDCylinder/RotY      = 0. deg
+d:Ge/SDCylinder/RotZ      = 0. deg
+
+s:Ge/SDCylinder/Type      = "TsCylinder"
+i:Ge/SDCylinder/RBins=1
+i:Ge/SDCylinder/PhiBins=1
+i:Ge/SDCylinder/ZBins= 10
+b:Ge/SDCylinder/IsParallel = "TRUE"
+
+
+s:Sc/Dose2MediumInPlane/OutputFile		  = "tsbox01_A_dose2medium"
+s:Sc/Dose2MediumInPlane/Component		  = "SDCylinder"
+
+
+s:Sc/Dose2WaterInPlane/OutputFile		 = "tsbox01_A_dose2water"
+s:Sc/Dose2WaterInPlane/Component		 = "SDCylinder"
+
+s:Sc/Dose2MaterialInPlane/OutputFile	= "tsbox01_A_dose2material"
+s:Sc/Dose2MaterialInPlane/Component		= "SDCylinder"
+
+s:Sc/EnergyDepositInPlane/OutputFile	  = "tsbox01_A_edep"
+s:Sc/EnergyDepositInPlane/Component		  = "SDCylinder"
+
+s:Sc/ChargeAtPlane/OutputFile  = "tsbox01_A_charge"
+s:Sc/ChargeAtPlane/Component   = "SDCylinder"
+
+s:Sc/EChargeAtPlane/OutputFile	 = "tsbox01_A_effcharge"
+s:Sc/EChargeAtPlane/Component	  = "SDCylinder"
+
+s:Sc/KineticEnergyAtPlane/OutputFile   = "tsbox01_A_kinetic"
+s:Sc/KineticEnergyAtPlane/Component	   = "SDCylinder"
+
+s:Sc/FluenceAtPlane/OutputFile	= "tsbox01_A_fluence"
+s:Sc/FluenceAtPlane/Component	= "SDCylinder"
+
+s:Sc/EFluenceAtPlane/OutputFile	   = "tsbox01_A_energyfluence"
+s:Sc/EFluenceAtPlane/Component	   = "SDCylinder"
+
+s:Sc/StepCountsAtPlane/OutputFile  = "tsbox01_A_stepcount"
+s:Sc/StepCountsAtPlane/Component   = "SDCylinder"
+
+s:Sc/SurfaceCurrentAtPlane/OutputFile	= "tsbox01_A_surfacecurrent"
+#s:Sc/SurfaceCurrentAtPlane/Surface       = "SDCylinder/ZPlusSurface"
+
+s:Sc/SurfaceTrackCountAtPlane/OutputFile   = "tsbox01_A_surfacetrackcount"
+#s:Sc/SurfaceTrackCountAtPlane/Surface	   = "SDCylinder/ZPlusSurface"

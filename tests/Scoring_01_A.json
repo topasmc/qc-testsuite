@@ -1,0 +1,28 @@
+{
+    "name": "Scoring_01_A",
+    "version": 0.1,
+    "description": "Score various quantities in a water tank, using a parallel world.",
+    "args": [
+        "Scoring_01_A.txt"
+    ],
+    "input_files": [
+        "Scoring_01_A.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1.header",
+        "phase_spaces/pixels_1x1.phsp"
+    ],
+    "output_files": [
+        "scoring01_charge_parallel.csv",
+        "scoring01_dose2material_parallel.csv",
+        "scoring01_dose2medium_parallel.csv",
+        "scoring01_dose2water_parallel.csv",
+        "scoring01_edep_parallel.csv",
+        "scoring01_effcharge_parallel.csv",
+        "scoring01_energyfluence_parallel.csv",
+        "scoring01_fluence_parallel.csv",
+        "scoring01_kinetic_parallel.csv",
+        "scoring01_stepcount_parallel.csv",
+        "scoring01_surfacecurrent_parallel.csv",
+        "scoring01_surfacetrackcount_parallel.csv"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Primary_03_A",
+    "version": 0.1,
+    "description": "Create phasespace using elliptical beam with energy spread.",
+    "args": [
+        "Primary_03_A.txt"
+    ],
+    "input_files": [
+        "Primary_03_A.txt",
+        "Primary_03.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary03a_iso_asc.header",
+        "primary03a_iso_asc.phsp"
+    ]
+}

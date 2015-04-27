@@ -1,0 +1,5 @@
+includeFile = Phasespace_02_A.txt
+
+
+s:Sc/PHSP_ISO/OutputFile = "phsp02_iso_bin"
+s:Sc/PHSP_ISO/OutputType = "Binary"

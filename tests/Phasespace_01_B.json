@@ -1,0 +1,18 @@
+{
+    "name": "Phasespace_01_B",
+    "version": 0.1,
+    "description": "Read a limited-IAEA phasespace file.",
+    "args": [
+        "Phasespace_01_B.txt"
+    ],
+    "input_files": [
+        "Phasespace_01_B.txt",
+        "Phasespace_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/LimitedOutput.header",
+        "phase_spaces/LimitedOutput.phsp"
+    ],
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

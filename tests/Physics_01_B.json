@@ -1,0 +1,14 @@
+{
+    "name": "Physics_01_B",
+    "version": 0.1,
+    "description": "Testing physics list: g4em-standard_opt0. Scoring dose to water.",
+    "args": [
+        "Physics_01_B.txt"
+    ],
+    "input_files": [
+        "Physics_01_B.txt"
+    ],
+    "output_files": [
+        "EnergyDepAtPhantomB.csv"
+    ]
+}

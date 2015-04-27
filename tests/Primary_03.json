@@ -1,0 +1,16 @@
+{
+    "name": "Primary_03",
+    "version": 0.1,
+    "description": "Create phasespace using elliptical beam.",
+    "args": [
+        "Primary_03.txt"
+    ],
+    "input_files": [
+        "Primary_03.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary03_iso_asc.header",
+        "primary03_iso_asc.phsp"
+    ]
+}

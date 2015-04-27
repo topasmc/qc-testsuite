@@ -1,0 +1,14 @@
+{
+    "name": "Physics_01_C",
+    "version": 0.1,
+    "description": "Testing physics list: transportation only. Scoring dose to water, should be null.",
+    "args": [
+        "Physics_01_C.txt"
+    ],
+    "input_files": [
+        "Physics_01_C.txt"
+    ],
+    "output_files": [
+        "EnergyDepAtPhantomC.csv"
+    ]
+}

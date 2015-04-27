@@ -1,0 +1,16 @@
+{
+    "name": "Primary_02",
+    "version": 0.1,
+    "description": "Create phasespace using rectangular beam.",
+    "args": [
+        "Primary_02.txt"
+    ],
+    "input_files": [
+        "Primary_02.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary02_iso_asc.header",
+        "primary02_iso_asc.phsp"
+    ]
+}

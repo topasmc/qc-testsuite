@@ -1,0 +1,17 @@
+{
+    "name": "Primary_01_A",
+    "version": 0.1,
+    "description": "Create phasespace using point source beam with energy spread.",
+    "args": [
+        "Primary_01_A.txt"
+    ],
+    "input_files": [
+        "Primary_01_A.txt",
+        "Primary_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary01a_iso_asc.header",
+        "primary01a_iso_asc.phsp"
+    ]
+}

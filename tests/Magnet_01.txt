@@ -1,0 +1,76 @@
+includeFile = GlobalParameters.txt
+
+s:So/Default/Type                   = "Beam"
+s:So/Default/BeamShape              = "point"
+d:So/Default/BeamAngularSpreadX     = 0.0 rad
+d:So/Default/BeamAngularSpreadY     = 0.0 rad
+d:So/Default/BeamEnergy             = 150.00 MeV
+u:So/Default/BeamEnergySpread       = 0.0
+i:So/Default/NumberOfHistoriesInRun = 100
+
+d:So/Default/BeamStandardDeviationY = 0.3 cm
+
+s:So/Default/Component     = "BeamPosition"
+d:Ge/BeamPosition/RotX     = 180. deg
+
+
+s:Ge/DipoleA/Type="TsDipoleMagnet"
+s:Ge/DipoleA/Parent="GantryCoordination"
+s:Ge/DipoleA/Material= "G4_AIR"
+d:Ge/DipoleA/HLX = 10 cm
+d:Ge/DipoleA/HLY = 10 cm
+d:Ge/DipoleA/HLZ = 20 cm
+d:Ge/DipoleA/TransX = 0.0 cm
+d:Ge/DipoleA/TransY = 0.0 cm
+d:Ge/DipoleA/TransZ = 2.0 m + Ge/DipoleA/HLZ
+d:Ge/DipoleA/RotX = 0.0 deg
+d:Ge/DipoleA/RotY = 0.0 deg
+d:Ge/DipoleA/RotZ = 0.0 deg
+
+u:Ge/DipoleA/DirectionX = 0.0
+u:Ge/DipoleA/DirectionY = 1.0
+u:Ge/DipoleA/DirectionZ = 0.0
+d:Ge/DipoleA/Strength   = 0.3 tesla
+
+#--- Target box the ZPlus surface at Iso center
+s:Ge/Plane_ISO/Type      = "G4Box"
+s:Ge/Plane_ISO/Material  = "Water"
+s:Ge/Plane_ISO/Parent    = "IsoCoordination"
+d:Ge/Plane_ISO/HLX       = 30.0 cm
+d:Ge/Plane_ISO/HLY       = 30.0 cm
+d:Ge/Plane_ISO/HLZ       = 0.5 mm
+d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY    = 0. m
+d:Ge/Plane_ISO/TransX    = 0. m
+d:Ge/Plane_ISO/RotX      = 0. deg
+d:Ge/Plane_ISO/RotY      = 0. deg
+d:Ge/Plane_ISO/RotZ      = 0. deg
+
+s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
+s:Sc/PHSP_ISO/OutputFile		   = "magnet01_iso_asc"
+b:Sc/PHSP_ISO/OutputToConsole      = "True"
+s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
+s:Sc/PHSP_ISO/OutputType           = "ASCII"
+i:Sc/PHSP_ISO/PhaseSpaceBufferSize = 1000
+b:Sc/PHSP_ISO/IncludeRunID         = "True"
+b:Sc/PHSP_ISO/IncludeEventID       = "True"
+b:Sc/PHSP_ISO/IncludeTrackID       = "True"
+b:Sc/PHSP_ISO/IncludeTime          = "True"
+b:Sc/PHSP_ISO/IncludeSeed          = "True"
+s:Sc/PHSP_ISO/IfOutputFileAlreadyExists = "Overwrite"
+
+
+s:Gr/viewer/Type = "OpenGl"
+u:Gr/viewer/Zoom = 0.5
+i:Gr/viewer/WindowSizeX = 900
+i:Gr/viewer/WindowSizeY = 900
+i:Gr/viewer/WindowPosX = 0
+i:Gr/viewer/WindowPosY = 0
+s:Gr/viewer/Projection = "Orthogonal"
+d:Gr/viewer/Theta = -90. deg
+d:Gr/viewer/Phi = 0. deg
+b:Gr/viewer/IncludeAxes  = "true"
+s:Gr/viewer/AxesComponent = "World"
+sv:Gr/OnlyIncludeParticlesNamed = 1 "proton"
+d:Gr/viewer/AxesSize = 20 cm
+

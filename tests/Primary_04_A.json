@@ -1,0 +1,19 @@
+{
+    "name": "Primary_04_A",
+    "version": 0.1,
+    "description": "Create phasespaces using Twiss beam with energy spread.",
+    "args": [
+        "Primary_04_A.txt"
+    ],
+    "input_files": [
+        "Primary_04_A.txt",
+        "Primary_04.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary04a_iso_asc.header",
+        "primary04a_iso_asc.phsp",
+        "primary04a_beam_asc.header",
+        "primary04a_beam_asc.phsp"
+    ]
+}

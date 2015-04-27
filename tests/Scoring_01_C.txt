@@ -1,0 +1,31 @@
+includeFile = Scoring_01.txt
+
+
+
+#--- All topas scoreres are defined and tested here.
+#except: dosetowaterbinned
+Sc/Dose2WaterInPlane/OutputFile	       = "scoring01_dose2water_report"
+Sc/Dose2MaterialInPlane/OutputFile     = "scoring01_dose2material_report"
+Sc/EnergyDepositInPlane/OutputFile     = "scoring01_edep_report"
+Sc/ChargeAtPlane/OutputFile		       = "scoring01_charge_report"
+Sc/EChargeAtPlane/OutputFile		   = "scoring01_effcharge_report"
+Sc/KineticEnergyAtPlane/OutputFile     = "scoring01_kinetic_report"
+Sc/FluenceAtPlane/OutputFile		   = "scoring01_fluence_report"
+Sc/EFluenceAtPlane/OutputFile		   = "scoring01_energyfluence_report"
+Sc/StepCountsAtPlane/OutputFile	       = "scoring01_stepcount_report"
+Sc/SurfaceCurrentAtPlane/OutputFile    = "scoring01_surfacecurrent_report"
+Sc/SurfaceTrackCountAtPlane/OutputFile = "scoring01_surfacetrackcount_report"
+
+Sc/Dose2MediumInPlane/OutputFile	   = "scoring01_dose2medium_report"
+sv:Sc/Dose2MediumInPlane/Report       = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/Dose2WaterInPlane/Report        = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/Dose2MaterialInPlane/Report     = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/EnergyDepositInPlane/Report     = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/ChargeAtPlane/Report            = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/EChargeAtPlane/Report           = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/KineticEnergyAtPlane/Report     = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/FluenceAtPlane/Report           = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/EFluenceAtPlane/Report          = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/StepCountsAtPlane/Report        = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/SurfaceCurrentAtPlane/Report    = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"
+sv:Sc/SurfaceTrackCountAtPlane/Report = 8 "Sum" "Mean" "Histories" "Count_in_bin" "Second_Moment" "Variance" "Standard_Deviation" "Min_Max"

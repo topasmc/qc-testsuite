@@ -1,0 +1,30 @@
+{
+    "name": "Scoring_01",
+    "version": 0.1,
+    "description": "Score various quantities in a water tank.",
+    "args": [
+        "Scoring_01.txt"
+    ],
+    "input_files": [
+        "Scoring_01.txt",
+        "GlobalParameters.txt",
+        "phase_spaces/pixels_1x1.header",
+        "phase_spaces/pixels_1x1.phsp"
+    ],
+    "output_files": [
+        "scoring01_charge.csv",
+        "scoring01_dose2material.csv",
+        "scoring01_dose2medium.csv",
+        "scoring01_dose2water.csv",
+        "scoring01_edep.csv",
+        "scoring01_effcharge.csv",
+        "scoring01_energyfluence.csv",
+        "scoring01_fluence.csv",
+        "scoring01_kinetic.csv",
+        "scoring01_stepcount.csv",
+        "scoring01_surfacecurrent.csv",
+        "scoring01_surfacetrackcount.csv",
+        "scoring01_phasespace.header",
+        "scoring01_phasespace.phsp"
+    ]
+}

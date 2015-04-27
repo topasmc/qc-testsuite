@@ -1,0 +1,14 @@
+{
+    "name": "Geometry_03",
+    "version": 0.1,
+    "description": "Tests divided components (TsBox, TsCylinder, TsSphere).",
+    "args": [
+        "Geometry_03.txt"
+    ],
+    "input_files": [
+        "Geometry_03.txt"
+    ],
+    "output_files": [
+        "Geometry_03_0.eps"
+    ]
+}

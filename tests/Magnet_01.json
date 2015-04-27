@@ -1,0 +1,16 @@
+{
+    "name": "Magnet_01",
+    "version": 0.1,
+    "description": "Deflect a point source beam with a dipole magnet.",
+    "args": [
+        "Magnet_01.txt"
+    ],
+    "input_files": [
+        "Magnet_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "magnet01_iso_asc.header",
+        "magnet01_iso_asc.phsp"
+    ]
+}

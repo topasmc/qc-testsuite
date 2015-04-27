@@ -1,0 +1,7 @@
+includeFile = Primary_03.txt
+
+s:So/Default/BeamXYDistribution     = "gaussian"
+d:So/Default/BeamStandardDeviationX = 0.2 cm
+d:So/Default/BeamStandardDeviationY = 0.3 cm
+
+s:Sc/PHSP_ISO/OutputFile	   = "primary03b_iso_asc"

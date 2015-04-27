@@ -1,0 +1,17 @@
+{
+    "name": "Primary_03_B",
+    "version": 0.1,
+    "description": "Create phasespace using elliptical beam with Gaussian xy angular spread.",
+    "args": [
+        "Primary_03_B.txt"
+    ],
+    "input_files": [
+        "Primary_03_B.txt",
+        "Primary_03.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": [
+        "primary03b_iso_asc.header",
+        "primary03b_iso_asc.phsp"
+    ]
+}

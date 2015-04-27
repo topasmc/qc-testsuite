@@ -1,0 +1,16 @@
+{
+    "name": "Geometry_01_A",
+    "version": 0.1,
+    "description": "Tests translations",
+    "args": [
+        "Geometry_01_A.txt"
+    ],
+    "input_files": [
+        "Geometry_01_A.txt",
+        "Geometry_01.txt",
+        "Geometry_Graphic_01.txt"
+    ],
+    "output_files": [
+        "Geometry_01_A_0.eps"
+    ]
+}

@@ -1,0 +1,38 @@
+includeFile = GlobalParameters.txt
+#includeFile = UT_Geometry_Graphic_01.txt
+
+Ts/PauseBeforeQuit = "False"
+Ts/Seed = 4
+
+#---- Constants
+d:Ge/MyBeamSizeInX = 5.0 cm
+d:Ge/MyBeamSizeInY = 5.0 cm
+
+#--- Primary beam: Flat distribution and Rectangle shape
+s:So/Default/Type = "PhaseSpace"
+s:So/Default/PhaseSpaceFileName = "phase_spaces/ASCIIOutput"
+
+b:So/Default/PhaseSpaceIgnoreXPos  = "false"
+b:So/Default/PhaseSpaceIgnoreYPos  = "false"
+b:So/Default/PhaseSpaceIgnoreZPos  = "false"
+
+b:So/Default/PhaseSpaceInvertXAxis = "false"
+b:So/Default/PhaseSpaceInvertYAxis = "false"
+b:So/Default/PhaseSpaceInvertZAxis = "false"
+s:So/Default/Component             = "World"
+
+d:Ge/BeamPosition/RotX     = 0. deg
+
+#--- Target box the ZPlus surface at Iso center
+s:Ge/Plane_ISO/Type                = "G4Box"
+s:Ge/Plane_ISO/Material            = "Vacuum"
+s:Ge/Plane_ISO/Parent              = "IsoCoordination"
+d:Ge/Plane_ISO/HLX                 = 0.5 cm + Ge/MyBeamSizeInX
+d:Ge/Plane_ISO/HLY                 = 0.5 cm + Ge/MyBeamSizeInY
+d:Ge/Plane_ISO/HLZ                 = 0.5 mm
+d:Ge/Plane_ISO/TransZ              = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY              = 0. m
+d:Ge/Plane_ISO/TransX              = 0. m
+d:Ge/Plane_ISO/RotX                = 0. deg
+d:Ge/Plane_ISO/RotY                = 0. deg
+d:Ge/Plane_ISO/RotZ                = 0. deg
