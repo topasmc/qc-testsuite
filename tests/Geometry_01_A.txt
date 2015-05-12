@@ -1,6 +1,5 @@
 includeFile = Geometry_01.txt
 s:Gr/MyOGLb/FileName = "Geometry_01_A"
-Ts/PauseBeforeQuit = "False"
 
 
 

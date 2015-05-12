@@ -1,7 +1,6 @@
 includeFile = Geometry_Graphic_01.txt
 s:Gr/MyOGLb/FileName = "Geometry_01"
 
-Ts/PauseBeforeQuit = "False"
 s:Gr/MyOGLb/AxesComponent = "Letter_O"
 
 #--------- Letter T --------

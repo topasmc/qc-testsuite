@@ -62,9 +62,6 @@ i:Ge/TestSphere/RBins=3
 i:Ge/TestSphere/PhiBins=4
 i:Ge/TestSphere/ThetaBins=12
 
-# Sequence
-#Ts/PauseBeforeQuit = "False"
-
 # Graphics
 s:Gr/ViewA/Type = "OpenGL"
 i:Gr/ViewA/WindowSizeX = 1024

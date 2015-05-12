@@ -506,7 +506,6 @@ s:Ge/DemoTwistedTubs/DrawingStyle = "FullWireFrame"
 
 b:Ge/World/Invisible = "True"
 s:Gr/MyViewA/Type = "OpenGL"
-#sv:Ts/PauseBeforeQuit = "False"
 s:Gr/MyViewA/FileName = "Geometry_02"
 b:Gr/MyViewA/CopyOpenGLToEPS = "true"
 
