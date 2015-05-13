@@ -7,19 +7,25 @@
     ],
     "input_files": [
         "TsBox_01.txt",
+        "Scoring_01.txt",
         "GlobalParameters.txt",
         "phase_spaces/10x15pixels.header",
         "phase_spaces/10x15pixels.phsp"
     ],
     "output_files": [
-        "charge.csv",
-        "edep.csv",
-        "effcharge.csv",
-        "energyfluence.csv",
-        "fluence.csv",
-        "kinetic.csv",
-        "stepcount.csv",
-        "surfacecurrent.csv",
-        "surfacetrackcount.csv"
+        "Charge.csv",
+        "DoseToMaterial.csv",
+        "DoseToMedium.csv",
+        "DoseToWater.csv",
+        "EnergyDeposit.csv",
+        "EffectiveCharge.csv",
+        "EnergyFluence.csv",
+        "Fluence.csv",
+        "KineticEnergy.csv",
+        "StepCount.csv",
+        "SurfaceCurrent.csv",
+        "SurfaceTrackCount.csv",
+        "iso_ascii.header",
+        "iso_ascii.phsp"
     ]
 }

@@ -4,28 +4,26 @@ includeFile = TsBox_01.txt
 i:So/Default/PhaseSpaceMultipleUse = 1
 
 sv:Ph/Default/LayeredMassGeometryWorlds = 1 "SDCylinder"
+b:Ge/SDCylinder/IsParallel = "TRUE"
 
-
-s:Ge/SDCylinder/Material = "parent"
-s:Ge/SDCylinder/Parent   = "Plane_ISO"
-#RMin not Rmin
-d:Ge/SDCylinder/RMin     = 0.0 cm
-d:Ge/SDCylinder/RMax     = 1.0 cm
-d:Ge/SDCylinder/SPhi     = 0.0 deg
-d:Ge/SDCylinder/DPhi     = 360.0 deg
-d:Ge/SDCylinder/HL       = 100.0 mm
-d:Ge/SDCylinder/TransZ   = 0.0 mm
-d:Ge/SDCylinder/TransY   = 0. m
-d:Ge/SDCylinder/TransX   = 0. m
-d:Ge/SDCylinder/RotX     = 0. deg
-d:Ge/SDCylinder/RotY     = 0. deg
-d:Ge/SDCylinder/RotZ     = 0. deg
 
 s:Ge/SDCylinder/Type       = "TsCylinder"
+s:Ge/SDCylinder/Parent     = "Plane_ISO"
+s:Ge/SDCylinder/Material   = "parent"
+d:Ge/SDCylinder/RMin       = 0.0 cm
+d:Ge/SDCylinder/RMax       = 1.0 cm
+d:Ge/SDCylinder/SPhi       = 0.0 deg
+d:Ge/SDCylinder/DPhi       = 360.0 deg
+d:Ge/SDCylinder/HL         = 100.0 mm
+d:Ge/SDCylinder/TransZ     = 0.0 mm
+d:Ge/SDCylinder/TransY     = 0. m
+d:Ge/SDCylinder/TransX     = 0. m
+d:Ge/SDCylinder/RotX       = 0. deg
+d:Ge/SDCylinder/RotY       = 0. deg
+d:Ge/SDCylinder/RotZ       = 0. deg
 i:Ge/SDCylinder/RBins      = 1
 i:Ge/SDCylinder/PhiBins    = 1
 i:Ge/SDCylinder/ZBins      = 10
-b:Ge/SDCylinder/IsParallel = "TRUE"
 
 
 s:Sc/Dose2MediumInPlane/Component      = "SDCylinder"

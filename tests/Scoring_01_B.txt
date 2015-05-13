@@ -1,37 +1,14 @@
 includeFile = Scoring_01.txt
 
-s:Sc/Dose2MediumInPlane/Component     = "Plane_ISO"
 b:Sc/Dose2MediumInPlane/Active		  = "false"
-
-s:Sc/Dose2WaterInPlane/Component      = "Plane_ISO"
 b:Sc/Dose2WaterInPlane/Active		  = "false"
-
-s:Sc/Dose2MaterialInPlane/Component   = "Plane_ISO"
 b:Sc/Dose2MaterialInPlane/Active	  = "false"
-
-s:Sc/EnergyDepositInPlane/Component   = "Plane_ISO"
 b:Sc/EnergyDepositInPlane/Active	  = "false"
-
-s:Sc/ChargeAtPlane/Component          = "Plane_ISO"
 b:Sc/ChargeAtPlane/Active			  = "false"
-
-s:Sc/EChargeAtPlane/Component         = "Plane_ISO"
 b:Sc/EChargeAtPlane/Active			  = "false"
-
-s:Sc/KineticEnergyAtPlane/Component   = "Plane_ISO"
 b:Sc/KineticEnergyAtPlane/Active	  = "false"
-
-s:Sc/FluenceAtPlane/Component         = "Plane_ISO"
 b:Sc/FluenceAtPlane/Active			  = "false"
-
-s:Sc/EFluenceAtPlane/Component        = "Plane_ISO"
 b:Sc/EFluenceAtPlane/Active			  = "false"
-
-s:Sc/StepCountsAtPlane/Component      = "Plane_ISO"
 b:Sc/StepCountsAtPlane/Active		  = "false"
-
-s:Sc/SurfaceCurrentAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
 b:Sc/SurfaceCurrentAtPlane/Active	  = "false"
-
-s:Sc/SurfaceTrackCountAtPlane/Surface = "Plane_ISO/ZPlusSurface"
 b:Sc/SurfaceTrackCountAtPlane/Active  = "false"
