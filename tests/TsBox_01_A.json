@@ -8,6 +8,7 @@
     "input_files": [
         "TsBox_01_A.txt",
         "TsBox_01.txt",
+        "Scoring_01.txt",
         "GlobalParameters.txt",
         "phase_spaces/10x15pixels.header",
         "phase_spaces/10x15pixels.phsp"

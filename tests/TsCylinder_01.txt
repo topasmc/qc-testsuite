@@ -1,13 +1,9 @@
-includeFile = GlobalParameters.txt
+includeFile = Scoring_01.txt
 
-i:Ts/Seed = 5
+# No longer using this component
+b:Ge/Plane_ISO/Include = "False"
 
-
-#--- Primary beam: 100 particles as a known source
-s:So/Default/Type                  = "PhaseSpace"
 s:So/Default/PhaseSpaceFileName    = "phase_spaces/cylinder_top"
-i:So/Default/PhaseSpaceMultipleUse = 1
-s:So/Default/Component             = "World"
 
 #--- Target box the ZPlus surface at Iso center
 s:Ge/ScoringCylinder/Type      = "TsCylinder"
@@ -25,81 +21,17 @@ d:Ge/ScoringCylinder/RotX      = 0. deg
 d:Ge/ScoringCylinder/RotY      = 0. deg
 d:Ge/ScoringCylinder/RotZ      = 0. deg
 
-#--- All topas scoreres are defined and tested here.
-#except: dosetowaterbinned
 
-s:Sc/Dose2MediumInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/Dose2MediumInPlane/Quantity   = "DoseToMedium"
-s:Sc/Dose2MediumInPlane/OutputFile = "dose2medium"
-s:Sc/Dose2MediumInPlane/Component  = "ScoringCylinder"
-
-s:Sc/Dose2WaterInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/Dose2WaterInPlane/Quantity   = "DoseToWater"
-s:Sc/Dose2WaterInPlane/OutputFile = "dose2water"
-s:Sc/Dose2WaterInPlane/Component  = "ScoringCylinder"
-
-#The following a little tiny volume is needed to score DoseToMaterial.
-#placed off the beam axis
-s:Ge/BoxForDose2Material/Type     = "G4Box"
-s:Ge/BoxForDose2Material/Material = "Lead"
-s:Ge/BoxForDose2Material/Parent   = "IsoCoordination"
-d:Ge/BoxForDose2Material/HLX      = 1.0 mm
-d:Ge/BoxForDose2Material/HLY      = 1.0 mm
-d:Ge/BoxForDose2Material/HLZ      = 0.5 mm
-d:Ge/BoxForDose2Material/TransZ   = -1.0 * Ge/BoxForDose2Material/HLZ cm
-d:Ge/BoxForDose2Material/TransY   = -10. cm
-d:Ge/BoxForDose2Material/TransX   = -10. cm
-d:Ge/BoxForDose2Material/RotX     = 0. deg
-d:Ge/BoxForDose2Material/RotY     = 0. deg
-d:Ge/BoxForDose2Material/RotZ     = 0. deg
-
-s:Sc/Dose2MaterialInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/Dose2MaterialInPlane/Quantity   = "DoseToMaterial"
-s:Sc/Dose2MaterialInPlane/Material   = "Lead"
-s:Sc/Dose2MaterialInPlane/OutputFile = "dose2material"
-s:Sc/Dose2MaterialInPlane/Component  = "ScoringCylinder"
-
-s:Sc/EnergyDepositInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EnergyDepositInPlane/Quantity   = "EnergyDeposit"
-s:Sc/EnergyDepositInPlane/OutputFile = "edep"
-s:Sc/EnergyDepositInPlane/Component  = "ScoringCylinder"
-
-s:Sc/ChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/ChargeAtPlane/Quantity   = "Charge"
-s:Sc/ChargeAtPlane/OutputFile = "charge"
-s:Sc/ChargeAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/EChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EChargeAtPlane/Quantity   = "EffectiveCharge"
-s:Sc/EChargeAtPlane/OutputFile = "effcharge"
-s:Sc/EChargeAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/KineticEnergyAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/KineticEnergyAtPlane/Quantity   = "KineticEnergyAtSurface"
-s:Sc/KineticEnergyAtPlane/OutputFile = "kinetic"
-s:Sc/KineticEnergyAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/FluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/FluenceAtPlane/Quantity   = "Fluence"
-s:Sc/FluenceAtPlane/OutputFile = "fluence"
-s:Sc/FluenceAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/EFluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EFluenceAtPlane/Quantity   = "EnergyFluence"
-s:Sc/EFluenceAtPlane/OutputFile = "energyfluence"
-s:Sc/EFluenceAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/StepCountsAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/StepCountsAtPlane/Quantity   = "StepCount"
-s:Sc/StepCountsAtPlane/OutputFile = "stepcount"
-s:Sc/StepCountsAtPlane/Component  = "ScoringCylinder"
-
-s:Sc/SurfaceCurrentAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceCurrentAtPlane/Quantity   = "SurfaceCurrent"
-s:Sc/SurfaceCurrentAtPlane/OutputFile = "surfacecurrent"
-s:Sc/SurfaceCurrentAtPlane/Surface    = "ScoringCylinder/ZPlusSurface"
-
-s:Sc/SurfaceTrackCountAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceTrackCountAtPlane/Quantity   = "SurfaceTrackCount"
-s:Sc/SurfaceTrackCountAtPlane/OutputFile = "surfacetrackcount"
-s:Sc/SurfaceTrackCountAtPlane/Surface    = "ScoringCylinder/ZPlusSurface"
+s:Sc/DoseToMedium/Component    = "ScoringCylinder"
+s:Sc/DoseToWater/Component     = "ScoringCylinder"
+s:Sc/DoseToMaterial/Component  = "ScoringCylinder"
+s:Sc/EnergyDeposit/Component   = "ScoringCylinder"
+s:Sc/Charge/Component          = "ScoringCylinder"
+s:Sc/EffectiveCharge/Component = "ScoringCylinder"
+s:Sc/KineticEnergy/Component   = "ScoringCylinder"
+s:Sc/Fluence/Component         = "ScoringCylinder"
+s:Sc/EnergyFluence/Component   = "ScoringCylinder"
+s:Sc/StepCount/Component       = "ScoringCylinder"
+s:Sc/SurfaceCurrent/Surface    = "ScoringCylinder/ZPlusSurface"
+s:Sc/SurfaceTrackCount/Surface = "ScoringCylinder/ZPlusSurface"
+s:Sc/PhasespaceScorer/Surface  = "ScoringCylinder/ZPlusSurface"

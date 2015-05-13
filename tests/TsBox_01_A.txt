@@ -1,40 +1,38 @@
 includeFile = TsBox_01.txt
 
-
-i:So/Default/PhaseSpaceMultipleUse = 1
-
 sv:Ph/Default/LayeredMassGeometryWorlds = 1 "SDCylinder"
-b:Ge/SDCylinder/IsParallel = "TRUE"
+b:Ge/SDCylinder/IsParallel = "True"
 
 
-s:Ge/SDCylinder/Type       = "TsCylinder"
-s:Ge/SDCylinder/Parent     = "Plane_ISO"
-s:Ge/SDCylinder/Material   = "parent"
-d:Ge/SDCylinder/RMin       = 0.0 cm
-d:Ge/SDCylinder/RMax       = 1.0 cm
-d:Ge/SDCylinder/SPhi       = 0.0 deg
-d:Ge/SDCylinder/DPhi       = 360.0 deg
-d:Ge/SDCylinder/HL         = 100.0 mm
-d:Ge/SDCylinder/TransZ     = 0.0 mm
-d:Ge/SDCylinder/TransY     = 0. m
-d:Ge/SDCylinder/TransX     = 0. m
-d:Ge/SDCylinder/RotX       = 0. deg
-d:Ge/SDCylinder/RotY       = 0. deg
-d:Ge/SDCylinder/RotZ       = 0. deg
-i:Ge/SDCylinder/RBins      = 1
-i:Ge/SDCylinder/PhiBins    = 1
-i:Ge/SDCylinder/ZBins      = 10
+s:Ge/SDCylinder/Type     = "TsCylinder"
+s:Ge/SDCylinder/Parent   = "Plane_ISO"
+s:Ge/SDCylinder/Material = "parent"
+d:Ge/SDCylinder/RMin     = 0.0 cm
+d:Ge/SDCylinder/RMax     = 1.0 cm
+d:Ge/SDCylinder/SPhi     = 0.0 deg
+d:Ge/SDCylinder/DPhi     = 360.0 deg
+d:Ge/SDCylinder/HL       = 100.0 mm
+d:Ge/SDCylinder/TransZ   = 0.0 mm
+d:Ge/SDCylinder/TransY   = 0. m
+d:Ge/SDCylinder/TransX   = 0. m
+d:Ge/SDCylinder/RotX     = 0. deg
+d:Ge/SDCylinder/RotY     = 0. deg
+d:Ge/SDCylinder/RotZ     = 0. deg
+i:Ge/SDCylinder/RBins    = 1
+i:Ge/SDCylinder/PhiBins  = 1
+i:Ge/SDCylinder/ZBins    = 10
 
 
-s:Sc/Dose2MediumInPlane/Component      = "SDCylinder"
-s:Sc/Dose2WaterInPlane/Component       = "SDCylinder"
-s:Sc/Dose2MaterialInPlane/Component    = "SDCylinder"
-s:Sc/EnergyDepositInPlane/Component    = "SDCylinder"
-s:Sc/ChargeAtPlane/Component           = "SDCylinder"
-s:Sc/EChargeAtPlane/Component          = "SDCylinder"
-s:Sc/KineticEnergyAtPlane/Component    = "SDCylinder"
-s:Sc/FluenceAtPlane/Component          = "SDCylinder"
-s:Sc/EFluenceAtPlane/Component         = "SDCylinder"
-s:Sc/StepCountsAtPlane/Component       = "SDCylinder"
-#s:Sc/SurfaceCurrentAtPlane/Surface    = "SDCylinder/ZPlusSurface"
-#s:Sc/SurfaceTrackCountAtPlane/Surface = "SDCylinder/ZPlusSurface"
+s:Sc/DoseToMedium/Component    = "SDCylinder"
+s:Sc/DoseToWater/Component     = "SDCylinder"
+s:Sc/DoseToMaterial/Component  = "SDCylinder"
+s:Sc/EnergyDeposit/Component   = "SDCylinder"
+s:Sc/Charge/Component          = "SDCylinder"
+s:Sc/EffectiveCharge/Component = "SDCylinder"
+s:Sc/KineticEnergy/Component   = "SDCylinder"
+s:Sc/Fluence/Component         = "SDCylinder"
+s:Sc/EnergyFluence/Component   = "SDCylinder"
+s:Sc/StepCount/Component       = "SDCylinder"
+s:Sc/SurfaceCurrent/Surface    = "SDCylinder/ZPlusSurface"
+s:Sc/SurfaceTrackCount/Surface = "SDCylinder/ZPlusSurface"
+s:Sc/PhasespaceScorer/Surface  = "SDCylinder/ZPlusSurface"

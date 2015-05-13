@@ -3,21 +3,15 @@ includeFile = Scoring_01.txt
 d:Ge/World/MaxStepSize = 100. mm
 
 s:So/Default/PhaseSpaceFileName = "phase_spaces/10x15pixels"
-i:So/Default/PhaseSpaceMultipleUse = 1
 
+# TODO: Why does box of lead placed at distance affect the scored results?
+b:Ge/BoxForDose2Material/Include = "False"
+b:Sc/DoseToMaterial/Active       = "False"
+s:Sc/DoseToMaterial/Material     = "Water"
 
-s:Ge/Plane_ISO/Type     = "TsBox"
-s:Ge/Plane_ISO/Material = "Water"
-s:Ge/Plane_ISO/Parent   = "IsoCoordination"
-d:Ge/Plane_ISO/HLX      = 100.0 mm
-d:Ge/Plane_ISO/HLY      = 150.0 mm
-d:Ge/Plane_ISO/HLZ      = 0.5 mm
-d:Ge/Plane_ISO/TransZ   = -1.0 * Ge/Plane_ISO/HLZ cm
-d:Ge/Plane_ISO/TransY   = 0. m
-d:Ge/Plane_ISO/TransX   = 0. m
-d:Ge/Plane_ISO/RotX     = 0. deg
-d:Ge/Plane_ISO/RotY     = 0. deg
-d:Ge/Plane_ISO/RotZ     = 0. deg
-i:Ge/Plane_ISO/XBins    = 10
-i:Ge/Plane_ISO/YBins    = 15
-i:Ge/Plane_ISO/ZBins    = 1
+s:Ge/Plane_ISO/Type  = "TsBox"
+d:Ge/Plane_ISO/HLX   = 100.0 mm
+d:Ge/Plane_ISO/HLY   = 150.0 mm
+i:Ge/Plane_ISO/XBins = 10
+i:Ge/Plane_ISO/YBins = 15
+i:Ge/Plane_ISO/ZBins = 1

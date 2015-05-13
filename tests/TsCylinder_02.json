@@ -7,22 +7,25 @@
     ],
     "input_files": [
         "TsCylinder_02.txt",
+        "Scoring_01.txt",
         "GlobalParameters.txt",
         "phase_spaces/pixels_1x1_cylinder.header",
         "phase_spaces/pixels_1x1_cylinder.phsp"
     ],
     "output_files": [
-        "charge.csv",
-        "dose2material.csv",
-        "dose2medium.csv",
-        "dose2water.csv",
-        "edep.csv",
-        "effcharge.csv",
-        "energyfluence.csv",
-        "fluence.csv",
-        "kinetic.csv",
-        "stepcount.csv",
-        "surfacecurrent.csv",
-        "surfacetrackcount.csv"
+        "Charge.csv",
+        "DoseToMaterial.csv",
+        "DoseToMedium.csv",
+        "DoseToWater.csv",
+        "EnergyDeposit.csv",
+        "EffectiveCharge.csv",
+        "EnergyFluence.csv",
+        "Fluence.csv",
+        "KineticEnergy.csv",
+        "StepCount.csv",
+        "SurfaceCurrent.csv",
+        "SurfaceTrackCount.csv",
+        "iso_ascii.header",
+        "iso_ascii.phsp"
     ]
 }
