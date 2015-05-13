@@ -12,7 +12,7 @@
         "GlobalParameters.txt"
     ],
     "output_files": [
-        "primary02a02_iso_asc.header",
-        "primary02a02_iso_asc.phsp"
+        "iso_ascii.header",
+        "iso_ascii.phsp"
     ]
 }

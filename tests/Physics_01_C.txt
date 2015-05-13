@@ -1,52 +1,29 @@
-#s:Gr/ViewA/Type = "OpenGL"
+i:So/Default/NumberOfHistoriesInRun = 1000
 
-Ts/PauseBeforeQuit = "False"
+s:Ph/ListName = "MyList"
 
-So/Default/NumberOfHistoriesInRun = 1000
+s:Ph/MyList/Type           = "Geant4_Modular"
+sv:Ph/MyList/Modules       = 1 "Transportation_Only"
+d:Ph/MyList/CutForGamma    = 0.04 mm
+d:Ph/MyList/CutForElectron = 0.03 mm
+d:Ph/MyList/CutForPositron = 0.02 mm
+d:Ph/MyList/CutForProton   = 0.01 mm
 
-s:Ph/ListName = "MyList3"
+s:Ge/Phantom/Type     = "TsBox"
+s:Ge/Phantom/Parent   = "World"
+s:Ge/Phantom/Material = "Water"
+d:Ge/Phantom/HLX      = 80.0 cm
+d:Ge/Phantom/HLY      = 80.0 cm
+d:Ge/Phantom/HLZ      = 20.0 cm
+d:Ge/Phantom/TransX   = 0. cm
+d:Ge/Phantom/TransY   = 0. cm
+d:Ge/Phantom/TransZ   = -30. cm
+d:Ge/Phantom/RotX     = 0. deg
+d:Ge/Phantom/RotY     = 0. deg
+d:Ge/Phantom/RotZ     = 0. deg
+s:Ge/Phantom/Color    = "blue"
 
-s:Ph/MyList1/Type= "Geant4_Modular"
-sv:Ph/MyList1/Modules = 3 "g4decay" "g4em-standard_opt3" "g4h-elastic"
-d:Ph/MyList1/CutForGamma = 0.04 mm
-d:Ph/MyList1/CutForElectron = 0.03 mm
-d:Ph/MyList1/CutForPositron = 0.02 mm
-d:Ph/MyList1/CutForProton = 0.01 mm
-
-s:Ph/MyList2/Type= "Geant4_Modular"
-sv:Ph/MyList2/Modules = 1 "g4em-standard_opt0"
-d:Ph/MyList2/CutForGamma = 0.04 mm
-d:Ph/MyList2/CutForElectron = 0.03 mm
-d:Ph/MyList2/CutForPositron = 0.02 mm
-d:Ph/MyList2/CutForProton = 0.01 mm
-
-s:Ph/MyList3/Type= "Geant4_Modular"
-sv:Ph/MyList3/Modules = 1 "Transportation_Only"
-d:Ph/MyList3/CutForGamma = 0.04 mm
-d:Ph/MyList3/CutForElectron = 0.03 mm
-d:Ph/MyList3/CutForPositron = 0.02 mm
-d:Ph/MyList3/CutForProton = 0.01 mm
-
-s:Ph/MyList4/Type = "QGSP_BERT_HP"
-d:Ph/MyList4/CutForAllParticles = 0.03 mm
-i:Ph/MyList4/Verbosity = 2
-
-s:Ge/Phantom/Type="TsBox"
-s:Ge/Phantom/Parent="World"
-s:Ge/Phantom/Material="Water"
-d:Ge/Phantom/HLX=80.0 cm
-d:Ge/Phantom/HLY=80.0 cm
-d:Ge/Phantom/HLZ=20.0 cm
-d:Ge/Phantom/TransX=0. cm
-d:Ge/Phantom/TransY=0. cm
-d:Ge/Phantom/TransZ= -30. cm
-d:Ge/Phantom/RotX=0. deg
-d:Ge/Phantom/RotY= 0.0 deg
-d:Ge/Phantom/RotZ=0. deg
-s:Ge/Phantom/Color="blue"
-
-s:Sc/EnergyDepAtPhantomC/Quantity    = "DoseToWater"
-s:Sc/EnergyDepAtPhantomC/Component   = "Phantom"
-b:Sc/EnergyDepAtPhantomC/OutputToConsole = "TRUE"
-s:Sc/EnergyDepAtPhantomC/IfOutputFileAlreadyExists = "Overwrite" 
-i:Sc/EnergyDepAtPhantomC/XBins = 2
+s:Sc/EnergyDepAtPhantom/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/EnergyDepAtPhantom/Quantity  = "DoseToWater"
+s:Sc/EnergyDepAtPhantom/Component = "Phantom"
+i:Sc/EnergyDepAtPhantom/XBins     = 2

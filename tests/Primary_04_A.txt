@@ -1,6 +1,3 @@
 includeFile = Primary_04.txt
 
 u:So/Default/BeamEnergySpread = 10.0
-
-s:Sc/PHSP_Beam/OutputFile	= "primary04a_beam_asc"
-s:Sc/PHSP_ISO/OutputFile	= "primary04a_iso_asc"

@@ -1,37 +1,8 @@
 includeFile = TsCylinder_01.txt
 
-#Ts/PauseBeforeSequence = "True"
+s:So/Default/PhaseSpaceFileName  = "phase_spaces/grid_cylinder"
 
-s:So/Default/PhaseSpaceFileName    = "phase_spaces/grid_cylinder"
-
-s:Ge/ScoringCylinder/Type      = "TsCylinder"
-
+s:Ge/ScoringCylinder/Type    = "TsCylinder"
 i:Ge/ScoringCylinder/RBins   = 15
 i:Ge/ScoringCylinder/PhiBins = 10
 i:Ge/ScoringCylinder/ZBins   = 1
-
-s:Sc/Dose2Medium/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/Dose2WaterInPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/Dose2MaterialInPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/EnergyDepositInPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/ChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/EChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/KineticEnergyAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/FluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/EFluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/StepCountsAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/SurfaceCurrentAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-s:Sc/SurfaceTrackCountAtPlane/IfOutputFileAlreadyExists = "Overwrite" #“Increment” “Exit”,  or “Increment”
-
-Sc/Dose2MediumInPlane/OutputFile	   = "tscylinder01a_dose2medium"
-Sc/Dose2WaterInPlane/OutputFile		   = "tscylinder01a_dose2water"
-Sc/Dose2MaterialInPlane/OutputFile	   = "tscylinder01a_dose2material"
-Sc/EnergyDepositInPlane/OutputFile	   = "tscylinder01a_edep"
-Sc/ChargeAtPlane/OutputFile		       = "tscylinder01a_charge"
-Sc/EChargeAtPlane/OutputFile		   = "tscylinder01a_effcharge"
-Sc/KineticEnergyAtPlane/OutputFile	   = "tscylinder01a_kinetic"
-Sc/FluenceAtPlane/OutputFile		   = "tscylinder01a_fluence"
-Sc/EFluenceAtPlane/OutputFile		   = "tscylinder01a_energyfluence"
-Sc/StepCountsAtPlane/OutputFile		   = "tscylinder01a_stepcount"
-Sc/SurfaceCurrentAtPlane/OutputFile	   = "tscylinder01a_surfacecurrent"
-Sc/SurfaceTrackCountAtPlane/OutputFile = "tscylinder01a_surfacetrackcount"

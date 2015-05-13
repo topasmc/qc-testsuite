@@ -11,7 +11,7 @@
         "GlobalParameters.txt"
     ],
     "output_files": [
-        "primary02b_iso_asc.header",
-        "primary02b_iso_asc.phsp"
+        "iso_ascii.header",
+        "iso_ascii.phsp"
     ]
 }

@@ -1,50 +1,37 @@
 includeFile = Scoring_01.txt
 
-s:Sc/Dose2MediumInPlane/OutputFile	  = "scoring01_dose2medium_inactive"
 s:Sc/Dose2MediumInPlane/Component     = "Plane_ISO"
 b:Sc/Dose2MediumInPlane/Active		  = "false"
 
-s:Sc/Dose2WaterInPlane/OutputFile	  = "scoring01_dose2water_inactive"
 s:Sc/Dose2WaterInPlane/Component      = "Plane_ISO"
 b:Sc/Dose2WaterInPlane/Active		  = "false"
 
-s:Sc/Dose2MaterialInPlane/OutputFile  = "scoring01_dose2material_inactive"
 s:Sc/Dose2MaterialInPlane/Component   = "Plane_ISO"
 b:Sc/Dose2MaterialInPlane/Active	  = "false"
 
-s:Sc/EnergyDepositInPlane/OutputFile  = "scoring01_edep_inactive"
 s:Sc/EnergyDepositInPlane/Component   = "Plane_ISO"
 b:Sc/EnergyDepositInPlane/Active	  = "false"
 
-s:Sc/ChargeAtPlane/OutputFile		  = "scoring01_charge_inactive"
 s:Sc/ChargeAtPlane/Component          = "Plane_ISO"
 b:Sc/ChargeAtPlane/Active			  = "false"
 
-s:Sc/EChargeAtPlane/OutputFile		  = "scoring01_effcharge_inactive"
 s:Sc/EChargeAtPlane/Component         = "Plane_ISO"
 b:Sc/EChargeAtPlane/Active			  = "false"
 
-s:Sc/KineticEnergyAtPlane/OutputFile  = "scoring01_kinetic_inactive"
 s:Sc/KineticEnergyAtPlane/Component   = "Plane_ISO"
 b:Sc/KineticEnergyAtPlane/Active	  = "false"
 
-s:Sc/FluenceAtPlane/OutputFile		  = "scoring01_fluence_inactive"
 s:Sc/FluenceAtPlane/Component         = "Plane_ISO"
 b:Sc/FluenceAtPlane/Active			  = "false"
 
-s:Sc/EFluenceAtPlane/OutputFile		  = "scoring01_energyfluence_inactive"
 s:Sc/EFluenceAtPlane/Component        = "Plane_ISO"
 b:Sc/EFluenceAtPlane/Active			  = "false"
 
-s:Sc/StepCountsAtPlane/OutputFile	  = "scoring01_stepcount_inactive"
 s:Sc/StepCountsAtPlane/Component      = "Plane_ISO"
 b:Sc/StepCountsAtPlane/Active		  = "false"
 
-s:Sc/SurfaceCurrentAtPlane/OutputFile = "scoring01_surfacecurrent_inactive"
 s:Sc/SurfaceCurrentAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
 b:Sc/SurfaceCurrentAtPlane/Active	  = "false"
 
-s:Sc/SurfaceTrackCountAtPlane/OutputFile = "scoring01_surfacetrackcount_inactive"
-s:Sc/SurfaceTrackCountAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
-b:Sc/SurfaceTrackCountAtPlane/Active	 = "false"
-
+s:Sc/SurfaceTrackCountAtPlane/Surface = "Plane_ISO/ZPlusSurface"
+b:Sc/SurfaceTrackCountAtPlane/Active  = "false"

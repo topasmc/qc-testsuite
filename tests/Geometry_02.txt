@@ -508,5 +508,3 @@ b:Ge/World/Invisible = "True"
 s:Gr/MyViewA/Type = "OpenGL"
 s:Gr/MyViewA/FileName = "Geometry_02"
 b:Gr/MyViewA/CopyOpenGLToEPS = "true"
-
-#i:So/Default/NumberOfHistoriesInRun = 1

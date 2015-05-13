@@ -16,9 +16,9 @@ b:So/Default/PhaseSpaceInvertXAxis = "false"
 b:So/Default/PhaseSpaceInvertYAxis = "false"
 b:So/Default/PhaseSpaceInvertZAxis = "false"
 
-s:So/Default/Component     = "World"
+s:So/Default/Component = "World"
 
-d:Ge/BeamPosition/RotX     = 0. deg
+d:Ge/BeamPosition/RotX = 0. deg
 
 #--- Target box the ZPlus surface at Iso center
 s:Ge/Plane_ISO/Type      = "TsBox"
@@ -26,80 +26,64 @@ s:Ge/Plane_ISO/Material  = "Water"
 s:Ge/Plane_ISO/Parent    = "IsoCoordination"
 
 #10.0, 15.0 for 10x15 pixels
-d:Ge/Plane_ISO/HLX       = 100.0 mm
-d:Ge/Plane_ISO/HLY       = 150.0 mm
-d:Ge/Plane_ISO/HLZ       = 0.5 mm
-d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
-d:Ge/Plane_ISO/TransY    = 0. m
-d:Ge/Plane_ISO/TransX    = 0. m
-d:Ge/Plane_ISO/RotX      = 0. deg
-d:Ge/Plane_ISO/RotY      = 0. deg
-d:Ge/Plane_ISO/RotZ      = 0. deg
+d:Ge/Plane_ISO/HLX    = 100.0 mm
+d:Ge/Plane_ISO/HLY    = 150.0 mm
+d:Ge/Plane_ISO/HLZ    = 0.5 mm
+d:Ge/Plane_ISO/TransZ = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY = 0. m
+d:Ge/Plane_ISO/TransX = 0. m
+d:Ge/Plane_ISO/RotX   = 0. deg
+d:Ge/Plane_ISO/RotY   = 0. deg
+d:Ge/Plane_ISO/RotZ   = 0. deg
 
 #10x15 for 10x15 pixelx, 100x150 for
-i:Ge/Plane_ISO/XBins	  = 10
-i:Ge/Plane_ISO/YBins	  = 15
-i:Ge/Plane_ISO/ZBins	  = 1
+i:Ge/Plane_ISO/XBins = 10
+i:Ge/Plane_ISO/YBins = 15
+i:Ge/Plane_ISO/ZBins = 1
 
-s:Sc/EnergyDepositInPlane/Quantity           = "EnergyDeposit"
-s:Sc/EnergyDepositInPlane/OutputFile		 = "tsbox01_edep"
+
+
 s:Sc/EnergyDepositInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EnergyDepositInPlane/OutputType		 = "csv"
-b:Sc/EnergyDepositInPlane/OutputToConsole    = "True"
-s:Sc/EnergyDepositInPlane/Component          = "Plane_ISO"
+s:Sc/EnergyDepositInPlane/Quantity   = "EnergyDeposit"
+s:Sc/EnergyDepositInPlane/OutputFile = "edep"
+s:Sc/EnergyDepositInPlane/Component  = "Plane_ISO"
 
-s:Sc/ChargeAtPlane/Quantity          = "Charge"
-s:Sc/ChargeAtPlane/OutputFile		 = "tsbox01_charge"
 s:Sc/ChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/ChargeAtPlane/OutputType		 = "csv"
-b:Sc/ChargeAtPlane/OutputToConsole   = "True"
-s:Sc/ChargeAtPlane/Component         = "Plane_ISO"
+s:Sc/ChargeAtPlane/Quantity   = "Charge"
+s:Sc/ChargeAtPlane/OutputFile = "charge"
+s:Sc/ChargeAtPlane/Component  = "Plane_ISO"
 
-s:Sc/EChargeAtPlane/Quantity         = "EffectiveCharge"
-s:Sc/EChargeAtPlane/OutputFile		 = "tsbox01_effcharge"
 s:Sc/EChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EChargeAtPlane/OutputType		 = "csv"
-b:Sc/EChargeAtPlane/OutputToConsole  = "True"
-s:Sc/EChargeAtPlane/Component        = "Plane_ISO"
+s:Sc/EChargeAtPlane/Quantity   = "EffectiveCharge"
+s:Sc/EChargeAtPlane/OutputFile = "effcharge"
+s:Sc/EChargeAtPlane/Component  = "Plane_ISO"
 
-s:Sc/KineticEnergyAtPlane/Quantity        = "kineticenergyatsurface"
-s:Sc/KineticEnergyAtPlane/OutputFile	  = "tsbox01_kinetic"
 s:Sc/KineticEnergyAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/KineticEnergyAtPlane/OutputType	  = "csv"
-b:Sc/KineticEnergyAtPlane/OutputToConsole = "True"
-s:Sc/KineticEnergyAtPlane/Component       = "Plane_ISO"
+s:Sc/KineticEnergyAtPlane/Quantity   = "KineticEnergyAtSurface"
+s:Sc/KineticEnergyAtPlane/OutputFile = "kinetic"
+s:Sc/KineticEnergyAtPlane/Component  = "Plane_ISO"
 
-s:Sc/FluenceAtPlane/Quantity           = "Fluence"
-s:Sc/FluenceAtPlane/OutputFile		   = "tsbox01_fluence"
 s:Sc/FluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/FluenceAtPlane/OutputType		   = "csv"
-b:Sc/FluenceAtPlane/OutputToConsole    = "True"
-s:Sc/FluenceAtPlane/Component          = "Plane_ISO"
+s:Sc/FluenceAtPlane/Quantity   = "Fluence"
+s:Sc/FluenceAtPlane/OutputFile = "fluence"
+s:Sc/FluenceAtPlane/Component  = "Plane_ISO"
 
-s:Sc/EFluenceAtPlane/Quantity          = "EnergyFluence"
-s:Sc/EFluenceAtPlane/OutputFile		   = "tsbox01_energyfluence"
 s:Sc/EFluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EFluenceAtPlane/OutputType		   = "csv"
-b:Sc/EFluenceAtPlane/OutputToConsole   = "True"
-s:Sc/EFluenceAtPlane/Component         = "Plane_ISO"
+s:Sc/EFluenceAtPlane/Quantity   = "EnergyFluence"
+s:Sc/EFluenceAtPlane/OutputFile = "energyfluence"
+s:Sc/EFluenceAtPlane/Component  = "Plane_ISO"
 
-s:Sc/StepCountsAtPlane/Quantity         = "stepcount"
-s:Sc/StepCountsAtPlane/OutputFile	 	= "tsbox01_stepcount"
 s:Sc/StepCountsAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/StepCountsAtPlane/OutputType	 	= "csv"
-b:Sc/StepCountsAtPlane/OutputToConsole  = "True"
-s:Sc/StepCountsAtPlane/Component        = "Plane_ISO"
+s:Sc/StepCountsAtPlane/Quantity   = "StepCount"
+s:Sc/StepCountsAtPlane/OutputFile = "stepcount"
+s:Sc/StepCountsAtPlane/Component  = "Plane_ISO"
 
-s:Sc/SurfaceCurrentAtPlane/Quantity         = "surfacecurrent"
-s:Sc/SurfaceCurrentAtPlane/OutputFile		= "tsbox01_surfacecurrent"
 s:Sc/SurfaceCurrentAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceCurrentAtPlane/OutputType		= "csv"
-b:Sc/SurfaceCurrentAtPlane/OutputToConsole  = "True"
-s:Sc/SurfaceCurrentAtPlane/Surface          = "Plane_ISO/ZPlusSurface"
+s:Sc/SurfaceCurrentAtPlane/Quantity   = "SurfaceCurrent"
+s:Sc/SurfaceCurrentAtPlane/OutputFile = "surfacecurrent"
+s:Sc/SurfaceCurrentAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
 
-s:Sc/SurfaceTrackCountAtPlane/Quantity        = "surfacetrackcount"
-s:Sc/SurfaceTrackCountAtPlane/OutputFile	  = "tsbox01_surfacetrackcount"
 s:Sc/SurfaceTrackCountAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceTrackCountAtPlane/OutputType	  = "csv"
-b:Sc/SurfaceTrackCountAtPlane/OutputToConsole = "True"
-s:Sc/SurfaceTrackCountAtPlane/Surface         = "Plane_ISO/ZPlusSurface"
+s:Sc/SurfaceTrackCountAtPlane/Quantity   = "SurfaceTrackCount"
+s:Sc/SurfaceTrackCountAtPlane/OutputFile = "surfacetrackcount"
+s:Sc/SurfaceTrackCountAtPlane/Surface    = "Plane_ISO/ZPlusSurface"

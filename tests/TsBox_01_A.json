@@ -13,14 +13,14 @@
         "phase_spaces/10x15pixels.phsp"
     ],
     "output_files": [
-        "tsbox01_A_charge.csv",
-        "tsbox01_A_edep.csv",
-        "tsbox01_A_effcharge.csv",
-        "tsbox01_A_energyfluence.csv",
-        "tsbox01_A_fluence.csv",
-        "tsbox01_A_kinetic.csv",
-        "tsbox01_A_stepcount.csv",
-        "tsbox01_A_surfacecurrent.csv",
-        "tsbox01_A_surfacetrackcount.csv"
+        "charge.csv",
+        "edep.csv",
+        "effcharge.csv",
+        "energyfluence.csv",
+        "fluence.csv",
+        "kinetic.csv",
+        "stepcount.csv",
+        "surfacecurrent.csv",
+        "surfacetrackcount.csv"
     ]
 }

@@ -3,7 +3,7 @@ includeFile = Phasespace_02.txt
 #--- Target box the ZPlus surface at Iso center
 s:Sc/PHSP_ISO/IfOutputFileAlreadyExists = "Overwrite"
 s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
-s:Sc/PHSP_ISO/OutputFile	     = "phsp02_iso_asc"
+s:Sc/PHSP_ISO/OutputFile	       = "iso_ascii"
 b:Sc/PHSP_ISO/OutputToConsole      = "True"
 s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
 s:Sc/PHSP_ISO/OutputType           = "ASCII"

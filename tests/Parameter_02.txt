@@ -1,32 +1,28 @@
-Ph/Default/Modules = 1 "g4em-standard_opt0"
-s:Tf/ScoringOnOff/Function="Step"
-dv:Tf/ScoringOnOff/Times =10  10    20      30      40     50      60     70     80     90      100   ms
-bv:Tf/ScoringOnOff/Values=10 "true" "false" "true" "false" "false" "true" "true" "true" "false" "true"
+sv:Ph/Default/Modules = 1 "g4em-standard_opt0"
+
+s:Tf/ScoringOnOff/Function = "Step"
+dv:Tf/ScoringOnOff/Times   = 10  10    20      30      40     50      60     70     80     90      100   ms
+bv:Tf/ScoringOnOff/Values  = 10 "true" "false" "true" "false" "false" "true" "true" "true" "false" "true"
 
 
 s:Tf/Field3DMapFile/Function = "Step"
-dv:Tf/Field3DMapFile/Times = 2 50 100 ms
-sv:Tf/Field3DMapFile/Values =2 Tf/Field3DMapFileA/Value Tf/Field3DMapFileB/Value
+dv:Tf/Field3DMapFile/Times   = 2 50 100 ms
+sv:Tf/Field3DMapFile/Values  = 2 Tf/Field3DMapFileA/Value Tf/Field3DMapFileB/Value
 
-s:Tf/Field3DMapFileA/Function="Step"
-dv:Tf/Field3DMapFileA/Times =5 10    20   30    40    50 ms
-sv:Tf/Field3DMapFileA/Values=5 "File_000.f3d" "File_010.f3d" Ge/my/name "File_030.f3d" "File_040.f3d" 
+s:Tf/Field3DMapFileA/Function = "Step"
+dv:Tf/Field3DMapFileA/Times   = 5 10    20   30    40    50 ms
+sv:Tf/Field3DMapFileA/Values  = 5 "File_000.f3d" "File_010.f3d" Ge/my/name "File_030.f3d" "File_040.f3d"
 
-s:Tf/Field3DMapFileB/Function="Step"
-dv:Tf/Field3DMapFileB/Times =5 10    20   30    40    50 ms
-sv:Tf/Field3DMapFileB/Values=5 
-"File_050.f3d"
-"File_060.f3d"
-"File_070.f3d"
-"File_080.f3d"
-"File_090.f3d"
+s:Tf/Field3DMapFileB/Function = "Step"
+dv:Tf/Field3DMapFileB/Times   = 5 10    20   30    40    50 ms
+sv:Tf/Field3DMapFileB/Values  = 5 "File_050.f3d" "File_060.f3d" "File_070.f3d" "File_080.f3d" "File_090.f3d"
 
 s:Ge/my/name = "External_File"
 
-Ts/PauseBeforeQuit = "False"
+b:Ts/PauseBeforeQuit = "False"
 
-Tf/TimelineEnd = 200.0 ms
-Tf/NumberOfSequentialTimes = 40
+d:Tf/TimelineEnd = 200.0 ms
+i:Tf/NumberOfSequentialTimes = 40
 i:Tf/Verbosity =1
 
 i:So/Default/NumberOfHistoriesInRun= 5

@@ -10,9 +10,9 @@
         "GlobalParameters.txt"
     ],
     "output_files": [
-        "primary04_iso_asc.header",
-        "primary04_iso_asc.phsp",
-        "primary04_beam_asc.header",
-        "primary04_beam_asc.phsp"
+        "iso_ascii.header",
+        "iso_ascii.phsp",
+        "beam_ascii.header",
+        "beam_ascii.phsp"
     ]
 }

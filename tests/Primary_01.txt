@@ -1,8 +1,5 @@
 includeFile = GlobalParameters.txt
 
-#s:Gr/ViewA/Type = "OpenGL"
-
-
 i:Ts/Seed = 5
 
 #--- Primary beam: 100 particles as a known source
@@ -40,7 +37,7 @@ d:Ge/Plane_ISO/RotY      = 0. deg
 d:Ge/Plane_ISO/RotZ      = 0. deg
 
 s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
-s:Sc/PHSP_ISO/OutputFile		   = "primary01_iso_asc"
+s:Sc/PHSP_ISO/OutputFile		   = "iso_ascii"
 b:Sc/PHSP_ISO/OutputToConsole      = "True"
 s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
 s:Sc/PHSP_ISO/OutputType           = "ASCII"

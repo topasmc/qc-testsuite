@@ -21,104 +21,100 @@ b:So/Default/PhaseSpaceInvertXAxis = "false"
 b:So/Default/PhaseSpaceInvertYAxis = "false"
 b:So/Default/PhaseSpaceInvertZAxis = "false"
 
-s:So/Default/Component     = "World"
+s:So/Default/Component = "World"
 
-d:Ge/BeamPosition/RotX     = 0. deg
-
-#--- Target box the ZPlus surface at Iso center
-s:Ge/Plane_ISO_TMP/Type      = "G4Box"
-s:Ge/Plane_ISO_TMP/Material  = "Water"
-s:Ge/Plane_ISO_TMP/Parent    = "IsoCoordination"
-d:Ge/Plane_ISO_TMP/HLX       = Ge/Plane_ISO/HLX mm
-d:Ge/Plane_ISO_TMP/HLY       = Ge/Plane_ISO/HLY mm
-d:Ge/Plane_ISO_TMP/HLZ       = Ge/Plane_ISO/HLZ mm
-d:Ge/Plane_ISO_TMP/TransZ    = -1.0 * Ge/Plane_ISO_TMP/HLZ cm
-d:Ge/Plane_ISO_TMP/TransY    = 0. m
-d:Ge/Plane_ISO_TMP/TransX    = 0. m
-d:Ge/Plane_ISO_TMP/RotX      = 0. deg
-d:Ge/Plane_ISO_TMP/RotY      = 0. deg
-d:Ge/Plane_ISO_TMP/RotZ      = 0. deg
+d:Ge/BeamPosition/RotX = 0. deg
 
 
 #--- Target box the ZPlus surface at Iso center
-s:Ge/Plane_ISO/Type      = "G4Box"
-s:Ge/Plane_ISO/Material  = "Water"
-s:Ge/Plane_ISO/Parent    = "IsoCoordination"
-d:Ge/Plane_ISO/HLX       = 1.0 mm
-d:Ge/Plane_ISO/HLY       = 1.0 mm
-d:Ge/Plane_ISO/HLZ       = 0.5 mm
-d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
-d:Ge/Plane_ISO/TransY    = 0. m
-d:Ge/Plane_ISO/TransX    = 0. m
-d:Ge/Plane_ISO/RotX      = 0. deg
-d:Ge/Plane_ISO/RotY      = 0. deg
-d:Ge/Plane_ISO/RotZ      = 0. deg
+s:Ge/Plane_ISO/Type     = "G4Box"
+s:Ge/Plane_ISO/Material = "Water"
+s:Ge/Plane_ISO/Parent   = "IsoCoordination"
+d:Ge/Plane_ISO/HLX      = 1.0 mm
+d:Ge/Plane_ISO/HLY      = 1.0 mm
+d:Ge/Plane_ISO/HLZ      = 0.5 mm
+d:Ge/Plane_ISO/TransZ   = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY   = 0. m
+d:Ge/Plane_ISO/TransX   = 0. m
+d:Ge/Plane_ISO/RotX     = 0. deg
+d:Ge/Plane_ISO/RotY     = 0. deg
+d:Ge/Plane_ISO/RotZ     = 0. deg
 b:Ge/Plane_ISO/IsParallel = "TRUE"
 
 
 s:Sc/Dose2MediumInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/Dose2MediumInPlane/Quantity          = "DoseToMedium"
-s:Sc/Dose2MediumInPlane/OutputFile	     = "scoring01_dose2medium_parallel"
-b:Sc/Dose2MediumInPlane/OutputToConsole   = "True"
-s:Sc/Dose2MediumInPlane/Component        = "Plane_ISO"
+s:Sc/Dose2MediumInPlane/Quantity   = "DoseToMedium"
+s:Sc/Dose2MediumInPlane/OutputFile = "dose2medium"
+s:Sc/Dose2MediumInPlane/Component  = "Plane_ISO"
 
 s:Sc/Dose2WaterInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/Dose2WaterInPlane/Quantity          = "DoseToWAter"
-s:Sc/Dose2WaterInPlane/OutputFile	     = "scoring01_dose2water_parallel"
-b:Sc/Dose2WaterInPlane/OutputToConsole   = "True"
-s:Sc/Dose2WaterInPlane/Component         = "Plane_ISO"
+s:Sc/Dose2WaterInPlane/Quantity   = "DoseToWater"
+s:Sc/Dose2WaterInPlane/OutputFile = "dose2water"
+s:Sc/Dose2WaterInPlane/Component  = "Plane_ISO"
+
+#A tiny volume is needed to score DoseToMaterial.
+#Box is placed off the beam axis and consists of lead
+s:Ge/BoxForDose2Material/Type     = "G4Box"
+s:Ge/BoxForDose2Material/Material = "Lead"
+s:Ge/BoxForDose2Material/Parent   = "IsoCoordination"
+d:Ge/BoxForDose2Material/HLX      = 1.0 mm
+d:Ge/BoxForDose2Material/HLY      = 1.0 mm
+d:Ge/BoxForDose2Material/HLZ      = 0.5 mm
+d:Ge/BoxForDose2Material/TransZ   = -1.0 * Ge/BoxForDose2Material/HLZ cm
+d:Ge/BoxForDose2Material/TransY   = -10. cm
+d:Ge/BoxForDose2Material/TransX   = -10. cm
+d:Ge/BoxForDose2Material/RotX     = 0. deg
+d:Ge/BoxForDose2Material/RotY     = 0. deg
+d:Ge/BoxForDose2Material/RotZ     = 0. deg
+
+s:Sc/Dose2MaterialInPlane/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/Dose2MaterialInPlane/Quantity   = "DoseToMaterial"
+s:Sc/Dose2MaterialInPlane/Material   = "Lead"
+s:Sc/Dose2MaterialInPlane/OutputFile = "dose2material"
+s:Sc/Dose2MaterialInPlane/Component  = "Plane_ISO"
 
 s:Sc/EnergyDepositInPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EnergyDepositInPlane/Quantity          = "EnergyDeposit"
-s:Sc/EnergyDepositInPlane/OutputFile     = "scoring01_edep_parallel"
-b:Sc/EnergyDepositInPlane/OutputToConsole   = "True"
-s:Sc/EnergyDepositInPlane/Component      = "Plane_ISO"
+s:Sc/EnergyDepositInPlane/Quantity   = "EnergyDeposit"
+s:Sc/EnergyDepositInPlane/OutputFile = "edep"
+s:Sc/EnergyDepositInPlane/Component  = "Plane_ISO"
 
 s:Sc/ChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/ChargeAtPlane/Quantity          = "Charge"
-s:Sc/ChargeAtPlane/OutputFile		     = "scoring01_charge_parallel"
-b:Sc/ChargeAtPlane/OutputToConsole   = "True"
-s:Sc/ChargeAtPlane/Component             = "Plane_ISO"
+s:Sc/ChargeAtPlane/Quantity   = "Charge"
+s:Sc/ChargeAtPlane/OutputFile = "charge"
+s:Sc/ChargeAtPlane/Component  = "Plane_ISO"
 
 s:Sc/EChargeAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EChargeAtPlane/Quantity          = "EffectiveCharge"
-s:Sc/EChargeAtPlane/OutputFile		     = "scoring01_effcharge_parallel"
-b:Sc/EChargeAtPlane/OutputToConsole   = "True"
-s:Sc/EChargeAtPlane/Component            = "Plane_ISO"
+s:Sc/EChargeAtPlane/Quantity   = "EffectiveCharge"
+s:Sc/EChargeAtPlane/OutputFile = "effcharge"
+s:Sc/EChargeAtPlane/Component  = "Plane_ISO"
 
 s:Sc/KineticEnergyAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/KineticEnergyAtPlane/Quantity          = "KineticEnergyAtSurface"
-s:Sc/KineticEnergyAtPlane/OutputFile     = "scoring01_kinetic_parallel"
-b:Sc/KineticEnergyAtPlane/OutputToConsole   = "True"
-s:Sc/KineticEnergyAtPlane/Component      = "Plane_ISO"
+s:Sc/KineticEnergyAtPlane/Quantity   = "KineticEnergyAtSurface"
+s:Sc/KineticEnergyAtPlane/OutputFile = "kinetic"
+s:Sc/KineticEnergyAtPlane/Component  = "Plane_ISO"
 
 s:Sc/FluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/FluenceAtPlane/Quantity          = "fluence"
-s:Sc/FluenceAtPlane/OutputFile		     = "scoring01_fluence_parallel"
-b:Sc/FluenceAtPlane/OutputToConsole   = "True"
-s:Sc/FluenceAtPlane/Component            = "Plane_ISO"
+s:Sc/FluenceAtPlane/Quantity   = "Fluence"
+s:Sc/FluenceAtPlane/OutputFile = "fluence"
+s:Sc/FluenceAtPlane/Component  = "Plane_ISO"
 
 s:Sc/EFluenceAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/EFluenceAtPlane/Quantity          = "EnergyFluence"
-s:Sc/EFluenceAtPlane/OutputFile		     = "scoring01_energyfluence_parallel"
-b:Sc/EFluenceAtPlane/OutputToConsole   = "True"
-s:Sc/EFluenceAtPlane/Component           = "Plane_ISO"
+s:Sc/EFluenceAtPlane/Quantity   = "EnergyFluence"
+s:Sc/EFluenceAtPlane/OutputFile = "energyfluence"
+s:Sc/EFluenceAtPlane/Component  = "Plane_ISO"
 
 s:Sc/StepCountsAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/StepCountsAtPlane/Quantity          = "StepCount"
-s:Sc/StepCountsAtPlane/OutputFile	     = "scoring01_stepcount_parallel"
-b:Sc/StepCountsAtPlane/OutputToConsole   = "True"
-s:Sc/StepCountsAtPlane/Component         = "Plane_ISO"
+s:Sc/StepCountsAtPlane/Quantity   = "StepCount"
+s:Sc/StepCountsAtPlane/OutputFile = "stepcount"
+s:Sc/StepCountsAtPlane/Component  = "Plane_ISO"
 
 s:Sc/SurfaceCurrentAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceCurrentAtPlane/Quantity          = "SurfaceCurrent"
-s:Sc/SurfaceCurrentAtPlane/OutputFile    = "scoring01_surfacecurrent_parallel"
-b:Sc/SurfaceCurrentAtPlane/OutputToConsole   = "True"
-s:Sc/SurfaceCurrentAtPlane/Surface       = "Plane_ISO/ZPlusSurface"
+s:Sc/SurfaceCurrentAtPlane/Quantity   = "SurfaceCurrent"
+s:Sc/SurfaceCurrentAtPlane/OutputFile = "surfacecurrent"
+s:Sc/SurfaceCurrentAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
 
 s:Sc/SurfaceTrackCountAtPlane/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/SurfaceTrackCountAtPlane/Quantity          = "surfacetrackcount"
-s:Sc/SurfaceTrackCountAtPlane/OutputFile = "scoring01_surfacetrackcount_parallel"
-b:Sc/SurfaceTrackCountAtPlane/OutputToConsole   = "True"
+s:Sc/SurfaceTrackCountAtPlane/Quantity   = "SurfaceTrackCount"
+s:Sc/SurfaceTrackCountAtPlane/OutputFile = "surfacetrackcount"
 s:Sc/SurfaceTrackCountAtPlane/Surface    = "Plane_ISO/ZPlusSurface"
 

@@ -13,17 +13,17 @@
         "phase_spaces/grid_cylinder.phsp"
     ],
     "output_files": [
-        "tscylinder01a_charge.csv",
-        "tscylinder01a_dose2material.csv",
-        "tscylinder01a_dose2medium.csv",
-        "tscylinder01a_dose2water.csv",
-        "tscylinder01a_edep.csv",
-        "tscylinder01a_effcharge.csv",
-        "tscylinder01a_energyfluence.csv",
-        "tscylinder01a_fluence.csv",
-        "tscylinder01a_kinetic.csv",
-        "tscylinder01a_stepcount.csv",
-        "tscylinder01a_surfacecurrent.csv",
-        "tscylinder01a_surfacetrackcount.csv"
+        "charge.csv",
+        "dose2material.csv",
+        "dose2medium.csv",
+        "dose2water.csv",
+        "edep.csv",
+        "effcharge.csv",
+        "energyfluence.csv",
+        "fluence.csv",
+        "kinetic.csv",
+        "stepcount.csv",
+        "surfacecurrent.csv",
+        "surfacetrackcount.csv"
     ]
 }

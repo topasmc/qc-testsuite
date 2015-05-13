@@ -2,7 +2,6 @@ includeFile = Geometry_01.txt
 s:Gr/MyOGLb/FileName = "Geometry_01_A"
 
 
-
 d:Ge/Letter_T/TransX  = 0.0 m
 d:Ge/Letter_T/TransY  = 0.5 m
 d:Ge/Letter_T/TransZ  = 0.0 m

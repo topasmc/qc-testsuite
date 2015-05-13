@@ -2,14 +2,14 @@ includeFile = GlobalParameters.txt
 
 s:Gr/ViewA/Type = "OpenGL"
 
-Ts/PauseBeforeQuit = "False"
+b:Ts/PauseBeforeQuit = "False"
 
 i:Ts/Seed = 5
 
 #----- Primary: Twiss parameterization
-#s:So/Default/Type             = "twiss"
-d:So/Default/BeamEnergy       = 150.00 MeV
-u:So/Default/BeamEnergySpread = 0.0
+#s:So/Default/Type                  = "twiss"
+d:So/Default/BeamEnergy             = 150.00 MeV
+u:So/Default/BeamEnergySpread       = 0.0
 i:So/Default/NumberOfHistoriesInRun = 1000
 
 #------------ alpha, beta, emittance for X
@@ -29,7 +29,7 @@ u:So/Default/SigmaOfYPrime = 0.03
 s:So/Default/Component     = "BeamPosition"
 
 #The following lines, which have nothing to do with TWISS, should be ignored.
-s:So/Default/Type             = "Beam"
+s:So/Default/Type                   = "Beam"
 s:So/Default/BeamShape              = "ellipse"
 s:So/Default/BeamXYDistribution     = "flat"
 d:So/Default/BeamStandardDeviationX = 0.2 cm
@@ -46,7 +46,7 @@ s:Ge/Plane_Beam/Parent    = "BeamPosition"
 d:Ge/Plane_Beam/HLX       = 5.0 cm
 d:Ge/Plane_Beam/HLY       = 5.0 cm
 d:Ge/Plane_Beam/HLZ       = 0.1 mm
-#Can't detector particles generating same position
+#Can't detect particles generating same position
 d:Ge/Plane_Beam/TransZ    = 0.0 cm
 #d:Ge/Plane_Beam/TransZ    = -1.0*Ge/Plane_Beam/HLZ cm
 d:Ge/Plane_Beam/TransY    = 0. m
@@ -56,7 +56,7 @@ d:Ge/Plane_Beam/RotY      = 0. deg
 d:Ge/Plane_Beam/RotZ      = 0. deg
 
 s:Sc/PHSP_Beam/Quantity             = "PhaseSpace"
-s:Sc/PHSP_Beam/OutputFile		    = "primary04_beam_asc"
+s:Sc/PHSP_Beam/OutputFile		    = "beam_ascii"
 b:Sc/PHSP_Beam/OutputToConsole      = "True"
 s:Sc/PHSP_Beam/Surface              = "Plane_Beam/ZPlusSurface"
 s:Sc/PHSP_Beam/OutputType           = "ASCII"
@@ -69,21 +69,21 @@ b:Sc/PHSP_Beam/IncludeSeed          = "True"
 s:Sc/PHSP_Beam/IfOutputFileAlreadyExists = "Overwrite"
 
 #--- Target box the ZPlus surface at Iso center
-s:Ge/Plane_ISO/Type      = "G4Box"
-s:Ge/Plane_ISO/Material  = "Water"
-s:Ge/Plane_ISO/Parent    = "IsoCoordination"
-d:Ge/Plane_ISO/HLX       = 30.0 cm
-d:Ge/Plane_ISO/HLY       = 30.0 cm
-d:Ge/Plane_ISO/HLZ       = 0.5 mm
-d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
-d:Ge/Plane_ISO/TransY    = 0. m
-d:Ge/Plane_ISO/TransX    = 0. m
-d:Ge/Plane_ISO/RotX      = 0. deg
-d:Ge/Plane_ISO/RotY      = 0. deg
-d:Ge/Plane_ISO/RotZ      = 0. deg
+s:Ge/Plane_ISO/Type     = "G4Box"
+s:Ge/Plane_ISO/Material = "Water"
+s:Ge/Plane_ISO/Parent   = "IsoCoordination"
+d:Ge/Plane_ISO/HLX      = 30.0 cm
+d:Ge/Plane_ISO/HLY      = 30.0 cm
+d:Ge/Plane_ISO/HLZ      = 0.5 mm
+d:Ge/Plane_ISO/TransZ   = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY   = 0. m
+d:Ge/Plane_ISO/TransX   = 0. m
+d:Ge/Plane_ISO/RotX     = 0. deg
+d:Ge/Plane_ISO/RotY     = 0. deg
+d:Ge/Plane_ISO/RotZ     = 0. deg
 
 s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
-s:Sc/PHSP_ISO/OutputFile		   = "primary04_iso_asc"
+s:Sc/PHSP_ISO/OutputFile		   = "iso_ascii"
 b:Sc/PHSP_ISO/OutputToConsole      = "True"
 s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
 s:Sc/PHSP_ISO/OutputType           = "ASCII"

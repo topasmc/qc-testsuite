@@ -13,4 +13,3 @@ s:Gr/MyOGLb/Projection = "Orthogonal"
 d:Gr/MyOGLb/Theta  =  0.0 deg
 d:Gr/MyOGLb/Phi    = 90.0 deg
 b:Gr/MyOGLb/CopyOpenGLToEPS = "true"
-

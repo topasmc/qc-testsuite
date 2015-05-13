@@ -9,6 +9,6 @@
         "Physics_01_B.txt"
     ],
     "output_files": [
-        "EnergyDepAtPhantomB.csv"
+        "EnergyDepAtPhantom.csv"
     ]
 }

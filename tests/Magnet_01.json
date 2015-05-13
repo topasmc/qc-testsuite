@@ -10,7 +10,7 @@
         "GlobalParameters.txt"
     ],
     "output_files": [
-        "magnet01_iso_asc.header",
-        "magnet01_iso_asc.phsp"
+        "iso_ascii.header",
+        "iso_ascii.phsp"
     ]
 }

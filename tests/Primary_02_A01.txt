@@ -1,6 +1,6 @@
 includeFile = Primary_02_A.txt
 
-d:So/Default/BeamAngularSpreadX     = 0.3 rad
-d:So/Default/BeamAngularSpreadY     = 0.2 rad
+d:So/Default/BeamAngularSpreadX = 0.3 rad
+d:So/Default/BeamAngularSpreadY = 0.2 rad
 
-s:Sc/PHSP_ISO/OutputFile	   = "primary02a01_iso_asc"
+s:Sc/PHSP_ISO/OutputFile = "iso_ascii"

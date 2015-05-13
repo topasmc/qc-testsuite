@@ -12,17 +12,17 @@
         "phase_spaces/cylinder_top.phsp"
     ],
     "output_files": [
-        "tscylinder01_charge.csv",
-        "tscylinder01_dose2material.csv",
-        "tscylinder01_dose2medium.csv",
-        "tscylinder01_dose2water.csv",
-        "tscylinder01_edep.csv",
-        "tscylinder01_effcharge.csv",
-        "tscylinder01_energyfluence.csv",
-        "tscylinder01_fluence.csv",
-        "tscylinder01_kinetic.csv",
-        "tscylinder01_stepcount.csv",
-        "tscylinder01_surfacecurrent.csv",
-        "tscylinder01_surfacetrackcount.csv"
+        "charge.csv",
+        "dose2material.csv",
+        "dose2medium.csv",
+        "dose2water.csv",
+        "edep.csv",
+        "effcharge.csv",
+        "energyfluence.csv",
+        "fluence.csv",
+        "kinetic.csv",
+        "stepcount.csv",
+        "surfacecurrent.csv",
+        "surfacetrackcount.csv"
     ]
 }

@@ -17,25 +17,25 @@ u:So/Default/BeamEnergySpread       = 0.0
 i:So/Default/NumberOfHistoriesInRun = 1000
 
 
-s:So/Default/Component     = "BeamPosition"
-d:Ge/BeamPosition/RotX     = 180. deg
+s:So/Default/Component = "BeamPosition"
+d:Ge/BeamPosition/RotX = 180. deg
 
 #--- Target box the ZPlus surface at Iso center
-s:Ge/Plane_ISO/Type      = "G4Box"
-s:Ge/Plane_ISO/Material  = "Water"
-s:Ge/Plane_ISO/Parent    = "IsoCoordination"
-d:Ge/Plane_ISO/HLX       = 30.0 cm
-d:Ge/Plane_ISO/HLY       = 30.0 cm
-d:Ge/Plane_ISO/HLZ       = 0.5 mm
-d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
-d:Ge/Plane_ISO/TransY    = 0. m
-d:Ge/Plane_ISO/TransX    = 0. m
-d:Ge/Plane_ISO/RotX      = 0. deg
-d:Ge/Plane_ISO/RotY      = 0. deg
-d:Ge/Plane_ISO/RotZ      = 0. deg
+s:Ge/Plane_ISO/Type     = "G4Box"
+s:Ge/Plane_ISO/Material = "Water"
+s:Ge/Plane_ISO/Parent   = "IsoCoordination"
+d:Ge/Plane_ISO/HLX      = 30.0 cm
+d:Ge/Plane_ISO/HLY      = 30.0 cm
+d:Ge/Plane_ISO/HLZ      = 0.5 mm
+d:Ge/Plane_ISO/TransZ   = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY   = 0. m
+d:Ge/Plane_ISO/TransX   = 0. m
+d:Ge/Plane_ISO/RotX     = 0. deg
+d:Ge/Plane_ISO/RotY     = 0. deg
+d:Ge/Plane_ISO/RotZ     = 0. deg
 
 s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
-s:Sc/PHSP_ISO/OutputFile		   = "primary03_iso_asc"
+s:Sc/PHSP_ISO/OutputFile		   = "iso_ascii"
 b:Sc/PHSP_ISO/OutputToConsole      = "True"
 s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
 s:Sc/PHSP_ISO/OutputType           = "ASCII"
