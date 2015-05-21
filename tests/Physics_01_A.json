@@ -1,6 +1,6 @@
 {
     "name": "Physics_01_A",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Testing physics list: g4em-standard_opt3 + g4h-elastic. Scoring dose to water.",
     "args": [
         "Physics_01_A.txt"
@@ -8,7 +8,7 @@
     "input_files": [
         "Physics_01_A.txt"
     ],
-    "output_files": [
-        "EnergyDepAtPhantom.csv"
-    ]
+    "output_files": {
+        "EnergyDepAtPhantom.csv": "csv"
+    }
 }

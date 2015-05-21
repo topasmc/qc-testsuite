@@ -1,6 +1,6 @@
 {
     "name": "Parameter_01",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Tests all allowed parameter forms",
     "args": [
         "Parameter_01.txt"
@@ -8,7 +8,7 @@
     "input_files": [
         "Parameter_01.txt"
     ],
-    "output_files": [
-        "TopasParameterDump_Run0.html"
-    ]
+    "output_files": {
+        "TopasParameterDump_Run0.html": "default"
+    }
 }

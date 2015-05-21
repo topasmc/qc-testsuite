@@ -1,6 +1,6 @@
 {
     "name": "TsCylinder_02",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Read phase space scored in divided TsCylinder.",
     "args": [
         "TsCylinder_02.txt"
@@ -12,20 +12,19 @@
         "phase_spaces/pixels_1x1_cylinder.header",
         "phase_spaces/pixels_1x1_cylinder.phsp"
     ],
-    "output_files": [
-        "Charge.csv",
-        "DoseToMaterial.csv",
-        "DoseToMedium.csv",
-        "DoseToWater.csv",
-        "EnergyDeposit.csv",
-        "EffectiveCharge.csv",
-        "EnergyFluence.csv",
-        "Fluence.csv",
-        "KineticEnergy.csv",
-        "StepCount.csv",
-        "SurfaceCurrent.csv",
-        "SurfaceTrackCount.csv",
-        "iso_ascii.header",
-        "iso_ascii.phsp"
-    ]
+    "output_files": {
+        "Charge.csv":            "csv",
+        "DoseToMaterial.csv":    "csv",
+        "DoseToMedium.csv":      "csv",
+        "DoseToWater.csv":       "csv",
+        "EnergyDeposit.csv":     "csv",
+        "EffectiveCharge.csv":   "csv",
+        "EnergyFluence.csv":     "csv",
+        "Fluence.csv":           "csv",
+        "KineticEnergy.csv":     "csv",
+        "LETd.csv":              "csv",
+        "StepCount.csv":         "csv",
+        "SurfaceCurrent.csv":    "csv",
+        "SurfaceTrackCount.csv": "csv"
+    }
 }

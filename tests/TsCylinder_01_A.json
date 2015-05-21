@@ -1,6 +1,6 @@
 {
     "name": "TsCylinder_01_A",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Score interactions with a divided TsCylinder using the same TsCylinder.",
     "args": [
         "TsCylinder_01_A.txt"
@@ -13,20 +13,21 @@
         "phase_spaces/grid_cylinder.header",
         "phase_spaces/grid_cylinder.phsp"
     ],
-    "output_files": [
-        "Charge.csv",
-        "DoseToMaterial.csv",
-        "DoseToMedium.csv",
-        "DoseToWater.csv",
-        "EnergyDeposit.csv",
-        "EffectiveCharge.csv",
-        "EnergyFluence.csv",
-        "Fluence.csv",
-        "KineticEnergy.csv",
-        "StepCount.csv",
-        "SurfaceCurrent.csv",
-        "SurfaceTrackCount.csv",
-        "iso_ascii.header",
-        "iso_ascii.phsp"
-    ]
+    "output_files": {
+        "Charge.csv":            "csv",
+        "DoseToMaterial.csv":    "csv",
+        "DoseToMedium.csv":      "csv",
+        "DoseToWater.csv":       "csv",
+        "EnergyDeposit.csv":     "csv",
+        "EffectiveCharge.csv":   "csv",
+        "EnergyFluence.csv":     "csv",
+        "Fluence.csv":           "csv",
+        "KineticEnergy.csv":     "csv",
+        "LETd.csv":              "csv",
+        "StepCount.csv":         "csv",
+        "SurfaceCurrent.csv":    "csv",
+        "SurfaceTrackCount.csv": "csv",
+        "iso_ascii.header":      "default",
+        "iso_ascii.phsp":        "array"
+    }
 }

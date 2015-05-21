@@ -1,6 +1,6 @@
 {
     "name": "Phasespace_02",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Read an ASCII phasespace file and send to TOPAS.",
     "args": [
         "Phasespace_02.txt"

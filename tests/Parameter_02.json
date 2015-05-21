@@ -1,6 +1,6 @@
 {
     "name": "Parameter_02",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Checks Boolean strings are read correctly",
     "args": [
         "Parameter_02.txt"
@@ -8,7 +8,7 @@
     "input_files": [
         "Parameter_02.txt"
     ],
-    "output_files": [
-        "NbParticlesInTime.txt"
-    ]
+    "output_files": {
+        "NbParticlesInTime.txt": "default"
+    }
 }

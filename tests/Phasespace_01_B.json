@@ -1,6 +1,6 @@
 {
     "name": "Phasespace_01_B",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Read a limited-IAEA phasespace file.",
     "args": [
         "Phasespace_01_B.txt"

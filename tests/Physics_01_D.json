@@ -1,6 +1,6 @@
 {
     "name": "Physics_01_D",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Testing physics list: QGSP_BERT_HP. Scoring dose to water.",
     "args": [
         "Physics_01_D.txt"
@@ -8,7 +8,7 @@
     "input_files": [
         "Physics_01_D.txt"
     ],
-    "output_files": [
-        "EnergyDepAtPhantom.csv"
-    ]
+    "output_files": {
+        "EnergyDepAtPhantom.csv": "csv"
+    }
 }

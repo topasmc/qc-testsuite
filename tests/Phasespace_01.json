@@ -1,6 +1,6 @@
 {
     "name": "Phasespace_01",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Read an ASCII phasespace file.",
     "args": [
         "Phasespace_01.txt"

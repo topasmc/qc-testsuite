@@ -1,6 +1,6 @@
 {
     "name": "Geometry_01",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Tests various geometries, materials and transformations. Also tests OpenGL components.",
     "args": [
         "Geometry_01.txt"
@@ -9,7 +9,7 @@
         "Geometry_01.txt",
         "Geometry_Graphic_01.txt"
     ],
-    "output_files": [
-        "Geometry_01_0.eps"
-    ]
+    "output_files": {
+        "Geometry_01_0.eps": "eps"
+    }
 }

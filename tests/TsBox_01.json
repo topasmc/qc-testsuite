@@ -1,6 +1,6 @@
 {
     "name": "TsBox_01",
-    "version": 0.1,
+    "version": 0.2,
     "description": "Score interactions with a divided TsBox using the same TsBox.",
     "args": [
         "TsBox_01.txt"
@@ -12,20 +12,21 @@
         "phase_spaces/10x15pixels.header",
         "phase_spaces/10x15pixels.phsp"
     ],
-    "output_files": [
-        "Charge.csv",
-        "DoseToMaterial.csv",
-        "DoseToMedium.csv",
-        "DoseToWater.csv",
-        "EnergyDeposit.csv",
-        "EffectiveCharge.csv",
-        "EnergyFluence.csv",
-        "Fluence.csv",
-        "KineticEnergy.csv",
-        "StepCount.csv",
-        "SurfaceCurrent.csv",
-        "SurfaceTrackCount.csv",
-        "iso_ascii.header",
-        "iso_ascii.phsp"
-    ]
+    "output_files": {
+        "Charge.csv":            "csv",
+        "DoseToMaterial.csv":    "csv",
+        "DoseToMedium.csv":      "csv",
+        "DoseToWater.csv":       "csv",
+        "EnergyDeposit.csv":     "csv",
+        "EffectiveCharge.csv":   "csv",
+        "EnergyFluence.csv":     "csv",
+        "Fluence.csv":           "csv",
+        "KineticEnergy.csv":     "csv",
+        "LETd.csv":              "csv",
+        "StepCount.csv":         "csv",
+        "SurfaceCurrent.csv":    "csv",
+        "SurfaceTrackCount.csv": "csv",
+        "iso_ascii.header":      "default",
+        "iso_ascii.phsp":        "array"
+    }
 }
