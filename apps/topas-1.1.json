@@ -1,0 +1,8 @@
+{
+    "name": "topas",
+    "version" : 1.1,
+    "setup_script" : "~/code/topas/pkg/1.1/setup.sh",
+    "exe" : "~/code/topas/pkg/1.1/topas",
+    "tests_path": "~/code/topas-testsuite/tests",
+    "benchmark_path": "~/code/topas-testsuite/benchmarks/1.1"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "topas",
+    "version" : "HEAD_seq",
+    "setup_script" : "~/code/topas/src/HEAD_seq-install/setup.sh",
+    "exe" : "~/code/topas/src/HEAD_seq-install/topas",
+    "tests_path": "~/code/topas-testsuite/tests",
+    "benchmark_path": "~/code/topas-testsuite/benchmarks/HEAD_seq"
+}

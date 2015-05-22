@@ -1,0 +1,8 @@
+{
+    "name": "topas",
+    "version" : "1.0-beta8",
+    "setup_script" : "~/code/topas/src/1.0-beta8-install/setup.sh",
+    "exe" : "~/code/topas/src/1.0-beta8-install/topas",
+    "tests_path": "~/code/topas-testsuite/tests",
+    "benchmark_path": "~/code/topas-testsuite/benchmarks/1.0-beta8"
+}
