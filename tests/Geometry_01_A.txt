@@ -1,5 +1,5 @@
 includeFile = Geometry_01.txt
-s:Gr/MyOGLb/FileName = "Geometry_01_A"
+s:Gr/MyGraphic/FileName = "Geometry_01_A"
 
 
 d:Ge/Letter_T/TransX  = 0.0 m

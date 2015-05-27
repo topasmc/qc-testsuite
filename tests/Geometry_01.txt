@@ -1,7 +1,7 @@
 includeFile = Geometry_Graphic_01.txt
-s:Gr/MyOGLb/FileName = "Geometry_01"
+s:Gr/MyGraphic/FileName = "Geometry_01"
 
-s:Gr/MyOGLb/AxesComponent = "Letter_O"
+s:Gr/MyGraphic/AxesComponent = "Letter_O"
 
 #--------- Letter T --------
 s:Ge/Letter_T/Parent  = "World"

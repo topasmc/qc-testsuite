@@ -1,6 +1,6 @@
 {
     "name": "Geometry_01_A",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Tests translations",
     "args": [
         "Geometry_01_A.txt"
@@ -11,6 +11,6 @@
         "Geometry_Graphic_01.txt"
     ],
     "output_files": {
-        "Geometry_01_A_0.eps": "eps"
+        "Geometry_01_A0.heprep": "default"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "Geometry_02",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Tests all available GEANT4 components.",
     "args": [
         "Geometry_02.txt"
@@ -9,6 +9,6 @@
         "Geometry_02.txt"
     ],
     "output_files": {
-        "Geometry_02_0.eps": "eps"
+        "Geometry_020.heprep": "default"
     }
 }

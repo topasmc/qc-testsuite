@@ -63,14 +63,6 @@ i:Ge/TestSphere/PhiBins=4
 i:Ge/TestSphere/ThetaBins=12
 
 # Graphics
-s:Gr/ViewA/Type = "OpenGL"
-i:Gr/ViewA/WindowSizeX = 1024
-i:Gr/ViewA/WindowSizeY = 768
-d:Gr/ViewA/Theta = 55 deg
-d:Gr/ViewA/Phi = 20 deg
-s:Gr/ViewA/Projection = "Perspective"
-d:Gr/ViewA/PerspectiveAngle = 30 deg
-u:Gr/ViewA/Zoom = 1.8
-b:Gr/ViewA/HiddenLineRemovalForTrajectories = "True"
-s:Gr/ViewA/FileName = "Geometry_03"
-b:Gr/ViewA/CopyOpenGLToEPS = "true"
+s:Gr/MyGraphic/Type = "HepRep"
+b:Gr/MyGraphic/HiddenLineRemovalForTrajectories = "True"
+s:Gr/MyGraphic/FileName = "Geometry_03"

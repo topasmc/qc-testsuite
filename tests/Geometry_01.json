@@ -1,7 +1,7 @@
 {
     "name": "Geometry_01",
-    "version": 0.2,
-    "description": "Tests various geometries, materials and transformations. Also tests OpenGL components.",
+    "version": 0.3,
+    "description": "Tests various geometries, materials and transformations. Also tests HepRep components.",
     "args": [
         "Geometry_01.txt"
     ],
@@ -10,6 +10,6 @@
         "Geometry_Graphic_01.txt"
     ],
     "output_files": {
-        "Geometry_01_0.eps": "eps"
+        "Geometry_010.heprep": "default"
     }
 }

@@ -1,9 +1,5 @@
 includeFile = GlobalParameters.txt
 
-s:Gr/ViewA/Type = "OpenGL"
-
-b:Ts/PauseBeforeQuit = "False"
-
 i:Ts/Seed = 5
 
 #----- Primary: Twiss parameterization

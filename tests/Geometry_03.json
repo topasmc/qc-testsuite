@@ -1,6 +1,6 @@
 {
     "name": "Geometry_03",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Tests divided components (TsBox, TsCylinder, TsSphere).",
     "args": [
         "Geometry_03.txt"
@@ -9,6 +9,6 @@
         "Geometry_03.txt"
     ],
     "output_files": {
-        "Geometry_03_0.eps": "eps"
+        "Geometry_030.heprep": "default"
     }
 }
