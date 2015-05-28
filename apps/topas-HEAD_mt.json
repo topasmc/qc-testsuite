@@ -2,7 +2,5 @@
     "name": "topas",
     "version" : "HEAD_mt",
     "setup_script" : "~/code/topas/src/HEAD_mt-install/setup.sh",
-    "exe" : "~/code/topas/src/HEAD_mt-install/topas",
-    "tests_path": "~/code/topas-testsuite/tests",
-    "benchmark_path": "~/code/topas-testsuite/benchmarks/HEAD_mt"
+    "exe" : "~/code/topas/src/HEAD_mt-install/topas"
 }
