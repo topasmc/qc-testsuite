@@ -1,6 +1,6 @@
 {
     "name": "Magnet_01",
-    "version": 0.3,
+    "version": 0.2,
     "description": "Deflect a point source beam with a dipole magnet.",
     "args": [
         "Magnet_01.txt"

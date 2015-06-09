@@ -14,8 +14,7 @@ s:So/Default/Component     = "BeamPosition"
 d:Ge/BeamPosition/RotX     = 180. deg
 
 
-s:Ge/DipoleA/Type="TsBox"
-s:Ge/DipoleA/MagneticField = "Dipole"
+s:Ge/DipoleA/Type="TsDipoleMagnet"
 s:Ge/DipoleA/Parent="GantryCoordination"
 s:Ge/DipoleA/Material= "G4_AIR"
 d:Ge/DipoleA/HLX = 10 cm
