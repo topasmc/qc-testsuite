@@ -9,6 +9,6 @@
         "Physics_01_C.txt"
     ],
     "output_files": {
-        "EnergyDepAtPhantom.csv": "csv"
+        "EnergyDepAtPhantom.csv": "csv_array"
     }
 }

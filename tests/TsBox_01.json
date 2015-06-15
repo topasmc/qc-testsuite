@@ -13,20 +13,20 @@
         "phase_spaces/10x15pixels.phsp"
     ],
     "output_files": {
-        "Charge.csv":            "csv",
-        "DoseToMaterial.csv":    "csv",
-        "DoseToMedium.csv":      "csv",
-        "DoseToWater.csv":       "csv",
-        "EnergyDeposit.csv":     "csv",
-        "EffectiveCharge.csv":   "csv",
-        "EnergyFluence.csv":     "csv",
-        "Fluence.csv":           "csv",
-        "KineticEnergy.csv":     "csv",
-        "LETd.csv":              "csv",
-        "StepCount.csv":         "csv",
-        "SurfaceCurrent.csv":    "csv",
-        "SurfaceTrackCount.csv": "csv",
-        "iso_ascii.header":      "default",
-        "iso_ascii.phsp":        "array"
+        "Charge.csv":            "csv_array",
+        "DoseToMaterial.csv":    "csv_array",
+        "DoseToMedium.csv":      "csv_array",
+        "DoseToWater.csv":       "csv_array",
+        "EnergyDeposit.csv":     "csv_array",
+        "EffectiveCharge.csv":   "csv_array",
+        "EnergyFluence.csv":     "csv_array",
+        "Fluence.csv":           "csv_array",
+        "KineticEnergy.csv":     "csv_array",
+        "LETd.csv":              "csv_array",
+        "StepCount.csv":         "csv_array",
+        "SurfaceCurrent.csv":    "csv_array",
+        "SurfaceTrackCount.csv": "csv_array",
+        "iso_ascii.header":      null,
+        "iso_ascii.phsp":        "ntuple"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "topas",
     "version" : "HEAD_seq",
-    "setup_script" : "~/code/topas/src/HEAD_seq-install/setup.sh",
-    "exe" : "~/code/topas/src/HEAD_seq-install/topas"
+    "setup_script" : "/Users/davidhall/code/topas/src/HEAD_seq-install/setup.sh",
+    "exe" : "/Users/davidhall/code/topas/src/HEAD_seq-install/topas"
 }

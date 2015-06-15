@@ -11,9 +11,9 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "iso_ascii.header":  "default",
-        "iso_ascii.phsp":    "array",
-        "beam_ascii.header": "default",
-        "beam_ascii.phsp":   "array"
+        "iso_ascii.header":  null,
+        "iso_ascii.phsp":    "ntuple",
+        "beam_ascii.header": null,
+        "beam_ascii.phsp":   "ntuple"
     }
 }

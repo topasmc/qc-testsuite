@@ -14,8 +14,8 @@
         "phase_spaces/pixels_1x1.phsp"
     ],
     "output_files": {
-        "iso_binary.header": "default",
-        "iso_binary.phsp": "binarray"
+        "iso_binary.header": null,
+        "iso_binary.phsp": "bin_array"
     },
     "fail_strings": [
         "Unknown particle type read from phase space file"
