@@ -90,8 +90,7 @@ s:Sc/EnergyFluence/Quantity                      = "EnergyFluence"
 s:Sc/EnergyFluence/Component                     = "Plane_ISO"
 
 s:Sc/LETd/IfOutputFileAlreadyExists              = "Overwrite"
-s:Sc/LETd/Quantity                               = "LETD"
-s:Sc/LETd/GetLETForParticleNamed                 = "proton"
+s:Sc/LETd/Quantity                               = "ProtonLET"
 s:Sc/LETd/Component                              = "Plane_ISO"
 
 s:Sc/StepCount/IfOutputFileAlreadyExists         = "Overwrite"
