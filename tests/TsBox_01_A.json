@@ -1,6 +1,6 @@
 {
     "name": "TsBox_01_A",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Score interactions with a divided TsBox using a divided TsCylinder in a parallel world.",
     "args": [
         "TsBox_01_A.txt"

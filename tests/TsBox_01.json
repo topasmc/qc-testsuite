@@ -1,6 +1,6 @@
 {
     "name": "TsBox_01",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Score interactions with a divided TsBox using the same TsBox.",
     "args": [
         "TsBox_01.txt"

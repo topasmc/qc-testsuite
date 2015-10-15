@@ -1,6 +1,6 @@
 {
     "name": "TsCylinder_02",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Read phase space scored in divided TsCylinder.",
     "args": [
         "TsCylinder_02.txt"

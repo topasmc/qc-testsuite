@@ -1,6 +1,6 @@
 {
     "name": "TsCylinder_01_A",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Score interactions with a divided TsCylinder using the same TsCylinder.",
     "args": [
         "TsCylinder_01_A.txt"

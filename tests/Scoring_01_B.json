@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01_B",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Score various quantities in a water tank, but with deactivated scorers (output should be null).",
     "args": [
         "Scoring_01_B.txt"
