@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01_C",
-    "version": 0.2,
+    "version": 0.3,
     "description": "Score various quantities in a water tank, reporting additional statistics.",
     "args": [
         "Scoring_01_C.txt"
