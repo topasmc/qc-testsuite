@@ -66,7 +66,7 @@ d:Ge/O_Left/RMax2    = 50.0 cm
 d:Ge/O_Left/HL    	 =  5.0 cm
 #Sphi : angle from x axis
 d:Ge/O_Left/SPhi     =  90.0 deg
-d:Ge/O_Left/DPhi     = 180.0 deg #- doesn't work
+d:Ge/O_Left/DPhi     = 180.0 deg
 d:Ge/O_Left/TransX   = 0. m
 d:Ge/O_Left/TransY   = 0. m
 d:Ge/O_Left/TransZ   = 0. m
@@ -82,7 +82,7 @@ s:Ge/O_Right/Parent   = "Letter_O"
 d:Ge/O_Right/RMin     = 45.0 cm
 d:Ge/O_Right/RMax     = 50.0 cm
 #Sphi : angle from x axis
-d:Ge/O_Right/SPhi     = 271.0 deg
+d:Ge/O_Right/SPhi     = 270.0 deg
 d:Ge/O_Right/DPhi     = 180.0 deg
 #STheta : angle from Y rotation
 d:Ge/O_Right/STheta   =  90.0 deg
