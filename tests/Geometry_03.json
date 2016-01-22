@@ -1,6 +1,6 @@
 {
     "name": "Geometry_03",
-    "version": 0.3,
+    "version": 1.0,
     "description": "Tests divided components (TsBox, TsCylinder, TsSphere).",
     "args": [
         "Geometry_03.txt"

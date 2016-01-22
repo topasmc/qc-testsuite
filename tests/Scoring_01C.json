@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_01C",
+    "version": 1.0,
+    "description": "Scorer output in XML format.",
+    "args": [
+        "Scoring_01C.txt"
+    ],
+    "input_files": [
+        "Scoring_01C.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "topas.xml": "default"
+    }
+}

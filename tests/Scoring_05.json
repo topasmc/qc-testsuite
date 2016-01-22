@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_05",
+    "version": 1.0,
+    "description": "Score in a TsBox parallel world.",
+    "args": [
+        "Scoring_05.txt"
+    ],
+    "input_files": [
+        "Scoring_05.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

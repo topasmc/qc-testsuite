@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_06B",
+    "version": 1.0,
+    "description": "Score in a fully divided TsSphere.",
+    "args": [
+        "Scoring_06B.txt"
+    ],
+    "input_files": [
+        "Scoring_06B.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

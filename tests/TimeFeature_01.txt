@@ -1,0 +1,14 @@
+includeFile = Scoring_01.txt
+
+#--- Timeline
+d:Tf/TimelineStart           = 0. s
+d:Tf/TimelineEnd             = 5. s
+i:Tf/NumberOfSequentialTimes = 5
+
+
+#--- Source
+d:So/Default/BeamEnergy            = Tf/BeamEnergy/Value MeV
+s:Tf/BeamEnergy/Function           = "Linear MeV"
+d:Tf/BeamEnergy/Rate               = 5. MeV/s
+d:Tf/BeamEnergy/StartValue         = 150. MeV
+d:Tf/BeamEnergy/RepetitionInterval = 10. s

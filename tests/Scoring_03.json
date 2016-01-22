@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_03",
+    "version": 1.0,
+    "description": "Report all possible statistics.",
+    "args": [
+        "Scoring_03.txt"
+    ],
+    "input_files": [
+        "Scoring_03.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

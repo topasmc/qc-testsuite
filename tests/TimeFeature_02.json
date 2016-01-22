@@ -1,0 +1,21 @@
+{
+    "name": "TimeFeature_02",
+    "version": 1.0,
+    "description": "Split the scorers according to the value of a time feature (beam energy).",
+    "args": [
+        "TimeFeature_02.txt"
+    ],
+    "input_files": [
+        "TimeFeature_02.txt",
+        "TimeFeature_01.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose-150-155MeV_Runs_0000-0004.csv": "topas csv",
+        "Dose-155-160MeV_Runs_0000-0004.csv": "topas csv",
+        "Dose-160-165MeV_Runs_0000-0004.csv": "topas csv",
+        "Dose-165-170MeV_Runs_0000-0004.csv": "topas csv",
+        "Dose-170-175MeV_Runs_0000-0004.csv": "topas csv"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_06",
+    "version": 1.0,
+    "description": "Score in a fully divided TsBox.",
+    "args": [
+        "Scoring_06.txt"
+    ],
+    "input_files": [
+        "Scoring_06.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "PhaseSpace_01B",
+    "version": 1.0,
+    "description": "Write binary phasespace file.",
+    "args": [
+        "PhaseSpace_01B.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_01B.txt",
+        "PhaseSpace_01A.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "iso_binary.header": null,
+        "iso_binary.phsp": "topas ntuple"
+    }
+}

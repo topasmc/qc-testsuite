@@ -1,0 +1,18 @@
+{
+    "name": "Scoring_05C",
+    "version": 1.0,
+    "description": "Score in a TsBox parallel world with layered mass geometry.",
+    "args": [
+        "Scoring_05C.txt"
+    ],
+    "input_files": [
+        "Scoring_05C.txt",
+        "Scoring_05A.txt",
+        "Scoring_05.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

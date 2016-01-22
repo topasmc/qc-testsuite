@@ -1,6 +1,6 @@
 {
     "name": "Parameter_01",
-    "version": 0.3,
+    "version": 1.0,
     "description": "Tests all allowed parameter forms",
     "args": [
         "Parameter_01.txt"

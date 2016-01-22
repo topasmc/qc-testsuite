@@ -1,0 +1,50 @@
+includeFile = GlobalParameters.txt
+
+i:Ts/Seed = 5
+
+#--- Primary beam: 100 particles as a known source
+s:So/Default/Type                  = "Beam"
+s:So/Default/BeamShape              = "point"
+d:So/Default/BeamAngularSpreadX     = 0.0 rad
+d:So/Default/BeamAngularSpreadY     = 0.0 rad
+d:So/Default/BeamEnergy             = 150.00 MeV
+u:So/Default/BeamEnergySpread       = 0.0
+i:So/Default/NumberOfHistoriesInRun = 10000
+
+#put non-zero to see whether it doesn't affect or not
+d:So/Default/BeamHWX                = 1.0 cm
+d:So/Default/BeamHWY                = 1.0 cm
+#The following two parameters should be ignored sine Beam is point like source!
+d:So/Default/BeamStandardDeviationX = 0.20 cm
+d:So/Default/BeamStandardDeviationY = 0.3 cm
+
+
+s:So/Default/Component     = "BeamPosition"
+d:Ge/BeamPosition/RotX     = 180. deg
+
+#--- Target box the ZPlus surface at Iso center
+s:Ge/Plane_ISO/Type      = "G4Box"
+s:Ge/Plane_ISO/Material  = "Water"
+s:Ge/Plane_ISO/Parent    = "IsoCoordination"
+d:Ge/Plane_ISO/HLX       = 30.0 cm
+d:Ge/Plane_ISO/HLY       = 30.0 cm
+d:Ge/Plane_ISO/HLZ       = 0.5 mm
+d:Ge/Plane_ISO/TransZ    = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY    = 0. m
+d:Ge/Plane_ISO/TransX    = 0. m
+d:Ge/Plane_ISO/RotX      = 0. deg
+d:Ge/Plane_ISO/RotY      = 0. deg
+d:Ge/Plane_ISO/RotZ      = 0. deg
+
+s:Sc/PHSP_ISO/Quantity             = "PhaseSpace"
+s:Sc/PHSP_ISO/OutputFile		   = "iso_ascii"
+b:Sc/PHSP_ISO/OutputToConsole      = "True"
+s:Sc/PHSP_ISO/Surface              = "Plane_ISO/ZPlusSurface"
+s:Sc/PHSP_ISO/OutputType           = "ASCII"
+i:Sc/PHSP_ISO/PhaseSpaceBufferSize = 1000
+b:Sc/PHSP_ISO/IncludeRunID         = "True"
+b:Sc/PHSP_ISO/IncludeEventID       = "True"
+b:Sc/PHSP_ISO/IncludeTrackID       = "True"
+b:Sc/PHSP_ISO/IncludeTime          = "True"
+b:Sc/PHSP_ISO/IncludeSeed          = "True"
+s:Sc/PHSP_ISO/IfOutputFileAlreadyExists = "Overwrite"

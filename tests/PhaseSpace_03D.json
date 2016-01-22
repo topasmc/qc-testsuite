@@ -1,0 +1,21 @@
+{
+    "name": "PhaseSpace_03D",
+    "version": 1.0,
+    "description": "Read ASCII phasespace file with additional information and use as source.",
+    "args": [
+        "PhaseSpace_03D.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_03D.txt",
+        "PhaseSpace_03A.txt",
+        "GlobalParameters.txt",
+        "phasespaces/iso_ascii_add.header",
+        "phasespaces/iso_ascii_add.phsp"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    },
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Scoring_06A",
+    "version": 1.0,
+    "description": "Score in a fully divided TsCylinder.",
+    "args": [
+        "Scoring_06A.txt"
+    ],
+    "input_files": [
+        "Scoring_06A.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

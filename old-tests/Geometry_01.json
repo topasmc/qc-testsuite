@@ -1,0 +1,15 @@
+{
+    "name": "Geometry_01",
+    "version": 0.3,
+    "description": "Tests various geometries, materials and transformations. Also tests HepRep components.",
+    "args": [
+        "Geometry_01.txt"
+    ],
+    "input_files": [
+        "Geometry_01.txt",
+        "Geometry_Graphic_01.txt"
+    ],
+    "output_files": {
+        "Geometry_010.heprep": "default"
+    }
+}

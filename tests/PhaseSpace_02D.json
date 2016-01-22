@@ -1,0 +1,22 @@
+{
+    "name": "PhaseSpace_02D",
+    "version": 1.0,
+    "description": "Read ASCII phasespace file with additional information and ensure particles remain unchanged.",
+    "args": [
+        "PhaseSpace_02D.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_02D.txt",
+        "PhaseSpace_02A.txt",
+        "GlobalParameters.txt",
+        "phasespaces/iso_ascii_add.header",
+        "phasespaces/iso_ascii_add.phsp"
+    ],
+    "output_files": {
+        "iso_ascii_add.header": null,
+        "iso_ascii_add.phsp": "topas ntuple"
+    },
+    "fail_strings": [
+        "Unknown particle type read from phase space file"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "PhaseSpace_01C",
+    "version": 1.0,
+    "description": "Write limited phasespace file.",
+    "args": [
+        "PhaseSpace_01C.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_01C.txt",
+        "PhaseSpace_01A.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "iso_limited.header": null,
+        "iso_limited.phsp": "topas ntuple"
+    }
+}

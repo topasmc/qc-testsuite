@@ -1,0 +1,21 @@
+{
+    "name": "TimeFeature_03",
+    "version": 1.0,
+    "description": "Write scorer output after each run.",
+    "args": [
+        "TimeFeature_03.txt"
+    ],
+    "input_files": [
+        "TimeFeature_03.txt",
+        "TimeFeature_01.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose_Run_0000.csv": "topas csv",
+        "Dose_Run_0001.csv": "topas csv",
+        "Dose_Run_0002.csv": "topas csv",
+        "Dose_Run_0003.csv": "topas csv",
+        "Dose_Run_0004.csv": "topas csv"
+    }
+}

@@ -1,7 +1,7 @@
 {
     "name": "Primary_01",
-    "version": 0.2,
-    "description": "Create phasespace using point source beam.",
+    "version": 1.0,
+    "description": "Test a source that is not called Default.",
     "args": [
         "Primary_01.txt"
     ],
@@ -10,7 +10,6 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "iso_ascii.header": null,
-        "iso_ascii.phsp": "ntuple"
+        "Dose.csv": "topas csv"
     }
 }

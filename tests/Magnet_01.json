@@ -1,7 +1,7 @@
 {
     "name": "Magnet_01",
-    "version": 0.3,
-    "description": "Deflect a point source beam with a dipole magnet.",
+    "version": 1.0,
+    "description": "Deflect a point source beam with a dipole magnet. Expect a deflection of about 13 cm.",
     "args": [
         "Magnet_01.txt"
     ],
@@ -10,7 +10,6 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "iso_ascii.header": null,
-        "iso_ascii.phsp": "ntuple"
+        "SurfaceTracks.csv": "topas csv"
     }
 }

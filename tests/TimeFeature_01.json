@@ -1,0 +1,16 @@
+{
+    "name": "TimeFeature_01",
+    "version": 1.0,
+    "description": "Linearly ramp up beam energy.",
+    "args": [
+        "TimeFeature_01.txt"
+    ],
+    "input_files": [
+        "TimeFeature_01.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose_Runs_0000-0004.csv": "topas csv"
+    }
+}

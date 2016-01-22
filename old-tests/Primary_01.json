@@ -1,0 +1,16 @@
+{
+    "name": "Primary_01",
+    "version": 0.2,
+    "description": "Create phasespace using point source beam.",
+    "args": [
+        "Primary_01.txt"
+    ],
+    "input_files": [
+        "Primary_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "iso_ascii.header": null,
+        "iso_ascii.phsp": "ntuple"
+    }
+}

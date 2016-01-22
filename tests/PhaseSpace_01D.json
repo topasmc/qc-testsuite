@@ -1,0 +1,17 @@
+{
+    "name": "PhaseSpace_01D",
+    "version": 1.0,
+    "description": "Write ASCII phasespace file with additional information.",
+    "args": [
+        "PhaseSpace_01D.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_01D.txt",
+        "PhaseSpace_01A.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "iso_ascii_add.header": null,
+        "iso_ascii_add.phsp": "topas ntuple"
+    }
+}

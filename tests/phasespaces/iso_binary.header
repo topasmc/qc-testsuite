@@ -1,0 +1,30 @@
+TOPAS Binary Phase Space
+
+Number of Original Histories: 100
+Number of Original Histories that Reached Phase Space: 100
+Number of Scored Particles: 107
+Number of Bytes per Particle: 34
+
+Byte order of each record is as follows:
+ 0- 3: Position X (cm)
+ 4- 7: Position Y (cm)
+ 8-11: Position Z (cm)
+12-15: Direction Cosine X
+16-19: Direction Cosine Y
+20-23: Energy (MeV)
+24-27: Weight
+28-31: Particle Type (in PDG Format)
+32-32: Flag to tell if Third Direction Cosine is Negative (1 means true)
+33-33: Flag to tell if this is the First Scored Particle from this History (1 means true)
+
+Number of e-: 6
+Number of gamma: 1
+Number of proton: 100
+
+Minimum Kinetic Energy of e-: 0.10484 MeV
+Minimum Kinetic Energy of gamma: 0.0404824 MeV
+Minimum Kinetic Energy of proton: 147.725 MeV
+
+Maximum Kinetic Energy of e-: 0.289532 MeV
+Maximum Kinetic Energy of gamma: 0.0404824 MeV
+Maximum Kinetic Energy of proton: 148.563 MeV

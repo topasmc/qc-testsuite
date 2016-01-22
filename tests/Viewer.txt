@@ -1,0 +1,5 @@
+s:Gr/MyOGL/Type = "OpenGL"
+s:Gr/MyOGL/ColorBy = "particletype"
+b:Ge/World/Invisible = "True"
+
+b:Ts/PauseBeforeQuit = "True"

@@ -1,0 +1,112 @@
+includeFile = GlobalParameters.txt
+
+i:Ts/Seed = 5
+
+
+#--- Primary beam: 100 particles as a known source
+s:So/Default/Type                  = "PhaseSpace"
+s:So/Default/PhaseSpaceFileName    = "phase_spaces/pixels_1x1"
+i:So/Default/PhaseSpaceMultipleUse = 1
+b:So/Default/PhaseSpaceIgnoreXPos  = "false"
+b:So/Default/PhaseSpaceIgnoreYPos  = "false"
+b:So/Default/PhaseSpaceIgnoreZPos  = "false"
+b:So/Default/PhaseSpaceInvertXAxis = "false"
+b:So/Default/PhaseSpaceInvertYAxis = "false"
+b:So/Default/PhaseSpaceInvertZAxis = "false"
+s:So/Default/Component             = "World"
+
+d:Ge/BeamPosition/RotX = 0. deg
+
+#--- Target box the ZPlus surface at Iso center
+s:Ge/Plane_ISO/Type     = "G4Box"
+s:Ge/Plane_ISO/Material = "Water"
+s:Ge/Plane_ISO/Parent   = "IsoCoordination"
+d:Ge/Plane_ISO/HLX      = 1.0 mm
+d:Ge/Plane_ISO/HLY      = 1.0 mm
+d:Ge/Plane_ISO/HLZ      = 0.5 mm
+d:Ge/Plane_ISO/TransZ   = -1.0 * Ge/Plane_ISO/HLZ cm
+d:Ge/Plane_ISO/TransY   = 0. m
+d:Ge/Plane_ISO/TransX   = 0. m
+d:Ge/Plane_ISO/RotX     = 0. deg
+d:Ge/Plane_ISO/RotY     = 0. deg
+d:Ge/Plane_ISO/RotZ     = 0. deg
+
+
+
+#--- All topas scoreres are defined and tested here.
+#except: dosetowaterbinned
+
+#A tiny volume is needed to score DoseToMaterial.
+#Box is placed off the beam axis and consists of lead
+s:Ge/BoxForDose2Material/Type     = "G4Box"
+s:Ge/BoxForDose2Material/Material = "Lead"
+s:Ge/BoxForDose2Material/Parent   = "IsoCoordination"
+d:Ge/BoxForDose2Material/HLX      = 1.0 mm
+d:Ge/BoxForDose2Material/HLY      = 1.0 mm
+d:Ge/BoxForDose2Material/HLZ      = 0.5 mm
+d:Ge/BoxForDose2Material/TransZ   = -1.0 * Ge/BoxForDose2Material/HLZ cm
+d:Ge/BoxForDose2Material/TransY   = -10. cm
+d:Ge/BoxForDose2Material/TransX   = -10. cm
+d:Ge/BoxForDose2Material/RotX     = 0. deg
+d:Ge/BoxForDose2Material/RotY     = 0. deg
+d:Ge/BoxForDose2Material/RotZ     = 0. deg
+
+
+s:Sc/DoseToMedium/IfOutputFileAlreadyExists      = "Overwrite"
+s:Sc/DoseToMedium/Quantity                       = "DoseToMedium"
+s:Sc/DoseToMedium/Component                      = "Plane_ISO"
+
+s:Sc/DoseToWater/IfOutputFileAlreadyExists       = "Overwrite"
+s:Sc/DoseToWater/Quantity                        = "DoseToWater"
+s:Sc/DoseToWater/Component                       = "Plane_ISO"
+
+s:Sc/DoseToMaterial/IfOutputFileAlreadyExists    = "Overwrite"
+s:Sc/DoseToMaterial/Quantity                     = "DoseToMaterial"
+s:Sc/DoseToMaterial/Material                     = "Lead"
+s:Sc/DoseToMaterial/Component                    = "Plane_ISO"
+
+s:Sc/EnergyDeposit/IfOutputFileAlreadyExists     = "Overwrite"
+s:Sc/EnergyDeposit/Quantity                      = "EnergyDeposit"
+s:Sc/EnergyDeposit/Component                     = "Plane_ISO"
+
+s:Sc/Charge/IfOutputFileAlreadyExists            = "Overwrite"
+s:Sc/Charge/Quantity                             = "Charge"
+s:Sc/Charge/Component                            = "Plane_ISO"
+
+s:Sc/EffectiveCharge/IfOutputFileAlreadyExists   = "Overwrite"
+s:Sc/EffectiveCharge/Quantity                    = "EffectiveCharge"
+s:Sc/EffectiveCharge/Component                   = "Plane_ISO"
+
+s:Sc/KineticEnergy/IfOutputFileAlreadyExists     = "Overwrite"
+s:Sc/KineticEnergy/Quantity                      = "KineticEnergyAtSurface"
+s:Sc/KineticEnergy/Component                     = "Plane_ISO"
+
+s:Sc/Fluence/IfOutputFileAlreadyExists           = "Overwrite"
+s:Sc/Fluence/Quantity                            = "Fluence"
+s:Sc/Fluence/Component                           = "Plane_ISO"
+
+s:Sc/EnergyFluence/IfOutputFileAlreadyExists     = "Overwrite"
+s:Sc/EnergyFluence/Quantity                      = "EnergyFluence"
+s:Sc/EnergyFluence/Component                     = "Plane_ISO"
+
+s:Sc/LETd/IfOutputFileAlreadyExists              = "Overwrite"
+s:Sc/LETd/Quantity                               = "ProtonLET"
+s:Sc/LETd/Component                              = "Plane_ISO"
+
+s:Sc/StepCount/IfOutputFileAlreadyExists         = "Overwrite"
+s:Sc/StepCount/Quantity                          = "StepCount"
+s:Sc/StepCount/Component                         = "Plane_ISO"
+
+s:Sc/SurfaceCurrent/IfOutputFileAlreadyExists    = "Overwrite"
+s:Sc/SurfaceCurrent/Quantity                     = "SurfaceCurrent"
+s:Sc/SurfaceCurrent/Surface                      = "Plane_ISO/ZPlusSurface"
+
+s:Sc/SurfaceTrackCount/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/SurfaceTrackCount/Quantity                  = "SurfaceTrackCount"
+s:Sc/SurfaceTrackCount/Surface                   = "Plane_ISO/ZPlusSurface"
+
+s:Sc/PhasespaceScorer/IfOutputFileAlreadyExists  = "Overwrite"
+s:Sc/PhasespaceScorer/Quantity                   = "Phasespace"
+s:Sc/PhasespaceScorer/OutputFile                 = "iso_ascii"
+s:Sc/PhasespaceScorer/OutputType                 = "ASCII"
+s:Sc/PhasespaceScorer/Surface                    = "Plane_ISO/ZPlusSurface"

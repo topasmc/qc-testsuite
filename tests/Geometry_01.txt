@@ -1,7 +1,10 @@
-includeFile = Geometry_Graphic_01.txt
-s:Gr/MyGraphic/FileName = "Geometry_01"
-
+#--- Graphics
+s:Gr/MyGraphic/Type          = "HepRep"
+b:Gr/MyGraphic/IncludeAxes   = "true"
+d:Gr/MyGraphic/AxesSize      = 20.0 cm
 s:Gr/MyGraphic/AxesComponent = "Letter_O"
+s:Gr/MyGraphic/FileName      = "Geometry_01"
+
 
 #--------- Letter T --------
 s:Ge/Letter_T/Parent  = "World"
@@ -28,7 +31,6 @@ d:Ge/T_1st/RotY     = 0. deg
 d:Ge/T_1st/RotZ     = 0. deg
 
 s:Ge/T_2nd/Type     = "G4Tubs"
-#G4_Water doesn't work, CASE sensitive
 s:Ge/T_2nd/Material = "G4_WATER"
 s:Ge/T_2nd/Parent   = "Letter_T"
 d:Ge/T_2nd/RMin     =   6.0 cm
@@ -57,15 +59,12 @@ d:Ge/Letter_O/RotZ    = 0. deg
 s:Ge/O_Left/Type     = "G4Cons"
 s:Ge/O_Left/Material = "Aluminum"
 s:Ge/O_Left/Parent   = "Letter_O"
-#RM[in,max]1 : -Z surface
-#RM[in,max]2 : +Z surface
-d:Ge/O_Left/RMin1    = 38.0 cm
-d:Ge/O_Left/RMax1    = 45.0 cm
-d:Ge/O_Left/RMin2    = 45.0 cm
-d:Ge/O_Left/RMax2    = 50.0 cm
+d:Ge/O_Left/RMin1    = 38.0 cm  # -z surface
+d:Ge/O_Left/RMax1    = 45.0 cm  # +z surface
+d:Ge/O_Left/RMin2    = 45.0 cm  # -z surface
+d:Ge/O_Left/RMax2    = 50.0 cm  # +z surface
 d:Ge/O_Left/HL    	 =  5.0 cm
-#Sphi : angle from x axis
-d:Ge/O_Left/SPhi     =  90.0 deg
+d:Ge/O_Left/SPhi     =  90.0 deg  # angle from x axis
 d:Ge/O_Left/DPhi     = 180.0 deg
 d:Ge/O_Left/TransX   = 0. m
 d:Ge/O_Left/TransY   = 0. m
@@ -77,18 +76,12 @@ d:Ge/O_Left/RotZ     = 0. deg
 s:Ge/O_Right/Type     = "G4Sphere"
 s:Ge/O_Right/Material = "Carbon"
 s:Ge/O_Right/Parent   = "Letter_O"
-#RM[in,max]1 : -Z surface
-#RM[in,max]2 : +Z surface
 d:Ge/O_Right/RMin     = 45.0 cm
 d:Ge/O_Right/RMax     = 50.0 cm
-#Sphi : angle from x axis
-d:Ge/O_Right/SPhi     = 270.0 deg
+d:Ge/O_Right/SPhi     = 270.0 deg  # angle from x axis
 d:Ge/O_Right/DPhi     = 180.0 deg
-#STheta : angle from Y rotation
-d:Ge/O_Right/STheta   =  90.0 deg
+d:Ge/O_Right/STheta   =  90.0 deg  # angle from Y rotation
 d:Ge/O_Right/DTheta   = 45.0 deg
-#When 180, it should cover half but actually not.
-#need for more checks!
 d:Ge/O_Right/TransX   = 0. m
 d:Ge/O_Right/TransY   = 0. m
 d:Ge/O_Right/TransZ   = 0. m
@@ -161,9 +154,6 @@ d:Ge/Letter_A/RotY    = 0. deg
 d:Ge/Letter_A/RotZ    = 0. deg
 #b:Ge/Letter_A/Include = "False"
 
-#HLZ, Theta, Phi, HLY1,
-#HLX1, HLX2, HLX3, HLX4,
-#Alp2, Alp1, HLY2,
 s:Ge/A_1st/Type      = "G4Para"
 s:Ge/A_1st/Material  = "Brass"
 s:Ge/A_1st/Parent    = "Letter_A"
@@ -180,7 +170,6 @@ d:Ge/A_1st/RotX      =  0.0 deg
 d:Ge/A_1st/RotY      =  0.0 deg
 d:Ge/A_1st/RotZ      =  0.0 deg
 
-#Will Try to build with G4GTrap or G4RTrap
 s:Ge/A_2nd/Type      = "G4Para"
 s:Ge/A_2nd/Material  = "Mylar"
 s:Ge/A_2nd/Parent    = "Letter_A"

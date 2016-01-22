@@ -1,0 +1,17 @@
+{
+    "name": "Scoring_01A",
+    "version": 1.0,
+    "description": "Scorer output in binary format.",
+    "args": [
+        "Scoring_01A.txt"
+    ],
+    "input_files": [
+        "Scoring_01A.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.bin": "topas binary",
+        "Dose.binheader": null
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Scoring_03A",
+    "version": 1.0,
+    "description": "Report all possible statistics in binary format.",
+    "args": [
+        "Scoring_03A.txt"
+    ],
+    "input_files": [
+        "Scoring_03A.txt",
+        "Scoring_03.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.bin": "topas binary",
+        "Dose.binheader": null
+    }
+}

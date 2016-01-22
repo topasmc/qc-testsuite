@@ -1,0 +1,33 @@
+{
+    "name": "Scoring_04",
+    "version": 1.0,
+    "description": "Tests a variety of filters.",
+    "args": [
+        "Scoring_04.txt"
+    ],
+    "input_files": [
+        "Scoring_04.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "All.csv": "topas csv",
+        "Primaries.csv": "topas csv",
+        "Secondaries.csv": "topas csv",
+        "Neutrals.csv": "topas csv",
+        "AtomicMass.csv": "topas csv",
+        "AtomicNumber.csv": "topas csv",
+        "KineticEnergy.csv": "topas csv",
+        "Momentum.csv": "topas csv",
+        "IncidentKineticEnergy.csv": "topas csv",
+        "IncidentMomentum.csv": "topas csv",
+        "Ionization.csv": "topas csv",
+        "BremsstrahlungAndDescendants.csv": "topas csv",
+        "Electrons.csv": "topas csv",
+        "NeutronsAndDescendants.csv": "topas csv",
+        "OriginateInFoil.csv": "topas csv",
+        "IgnoredFoil.csv": "topas csv",
+        "TraversedFoil.csv": "topas csv",
+        "Lead.csv": "topas csv",
+        "Backscatter.csv": "topas csv"
+    }
+}

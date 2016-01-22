@@ -1,7 +1,7 @@
 {
     "name": "Geometry_02",
-    "version": 0.3,
-    "description": "Tests all available GEANT4 components.",
+    "version": 1.0,
+    "description": "Tests all standard Geant4 solids.",
     "args": [
         "Geometry_02.txt"
     ],

@@ -1,31 +1,15 @@
 {
     "name": "Scoring_01",
-    "version": 0.3,
-    "description": "Score various quantities in a water tank.",
+    "version": 1.0,
+    "description": "Basic test shooting a 6cm diameter proton beam into a water phantom.",
     "args": [
         "Scoring_01.txt"
     ],
     "input_files": [
         "Scoring_01.txt",
-        "GlobalParameters.txt",
-        "phase_spaces/pixels_1x1.header",
-        "phase_spaces/pixels_1x1.phsp"
+        "GlobalParameters.txt"
     ],
     "output_files": {
-        "Charge.csv":            "csv_array",
-        "DoseToMaterial.csv":    "csv_array",
-        "DoseToMedium.csv":      "csv_array",
-        "DoseToWater.csv":       "csv_array",
-        "EnergyDeposit.csv":     "csv_array",
-        "EffectiveCharge.csv":   "csv_array",
-        "EnergyFluence.csv":     "csv_array",
-        "Fluence.csv":           "csv_array",
-        "KineticEnergy.csv":     "csv_array",
-        "LETd.csv":              "csv_array",
-        "StepCount.csv":         "csv_array",
-        "SurfaceCurrent.csv":    "csv_array",
-        "SurfaceTrackCount.csv": "csv_array",
-        "iso_ascii.header":      null,
-        "iso_ascii.phsp":        "ntuple"
+        "Dose.csv": "topas csv"
     }
 }

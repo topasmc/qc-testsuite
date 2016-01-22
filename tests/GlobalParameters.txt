@@ -8,7 +8,6 @@
 #Beam source coordinate system rotate 180 and translate along z w.r.t g.
 #-> Y is -Y. we have to flip phase space data.
 
-i:Ts/TrackingVerbosity  = 0
 #--- Geometry
 #Iso coordination system (If,Io)
 s:Ge/IsoCoordination/Parent  = "World"
@@ -41,15 +40,10 @@ d:Ge/BeamPosition/RotX     = 180. deg
 d:Ge/BeamPosition/RotY     = 0. deg
 d:Ge/BeamPosition/RotZ     = 0. deg
 
-#---- Sequence
-Ge/CheckForUnusedComponents 	 = "False"
-b:Ts/ShowCPUTime 		 = "tRuE" #For checking case sensitivity
-i:Ts/ShowHistoryCountAtInterval= 1000000
-b:Tf/RandomizeTimeDistribution = "False"
-d:Tf/TimelineStart             = 0. s
-d:Tf/TimelineEnd               = Tf/TimelineStart s
-i:Tf/NumberOfSequentialTimes   = 1
 
-#--- Physics
-d:Ge/World/MaxStepSize = 100.0 m
-#sv:Ph/Default/Modules =1 "g4em-standard_opt0"
+#---- Sequence
+b:Ts/ShowCPUTime = "True"
+i:Ts/ShowHistoryCountAtInterval = 1000000
+i:Ts/Seed = 5
+
+#includeFile = Viewer.txt

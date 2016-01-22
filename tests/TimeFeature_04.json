@@ -1,0 +1,17 @@
+{
+    "name": "TimeFeature_04",
+    "version": 1.0,
+    "description": "In sequential mode, apply beam current modulation to achieve a poor man's SOBP.",
+    "args": [
+        "TimeFeature_04.txt"
+    ],
+    "input_files": [
+        "TimeFeature_04.txt",
+        "TimeFeature_01.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose_Runs_0000-0004.csv": "topas csv"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "TimeFeature_05",
+    "version": 1.0,
+    "description": "In random mode, apply beam current modulation to achieve a poor man's SOBP.",
+    "args": [
+        "TimeFeature_05.txt"
+    ],
+    "input_files": [
+        "TimeFeature_05.txt",
+        "TimeFeature_01.txt",
+        "Scoring_01.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Dose.csv": "topas csv"
+    }
+}

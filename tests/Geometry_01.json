@@ -1,13 +1,12 @@
 {
     "name": "Geometry_01",
-    "version": 0.3,
-    "description": "Tests various geometries, materials and transformations. Also tests HepRep components.",
+    "version": 1.0,
+    "description": "Spell out TOPAS!! Tests various geometries, materials and transformations. Also tests HepRep output.",
     "args": [
         "Geometry_01.txt"
     ],
     "input_files": [
-        "Geometry_01.txt",
-        "Geometry_Graphic_01.txt"
+        "Geometry_01.txt"
     ],
     "output_files": {
         "Geometry_010.heprep": "default"
