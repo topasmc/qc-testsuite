@@ -11,6 +11,6 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Dose.csv": "topas csv"
+        "Dose.csv": "topas binned"
     }
 }

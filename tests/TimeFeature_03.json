@@ -12,10 +12,10 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Dose_Run_0000.csv": "topas csv",
-        "Dose_Run_0001.csv": "topas csv",
-        "Dose_Run_0002.csv": "topas csv",
-        "Dose_Run_0003.csv": "topas csv",
-        "Dose_Run_0004.csv": "topas csv"
+        "Dose_Run_0000.csv": "topas binned",
+        "Dose_Run_0001.csv": "topas binned",
+        "Dose_Run_0002.csv": "topas binned",
+        "Dose_Run_0003.csv": "topas binned",
+        "Dose_Run_0004.csv": "topas binned"
     }
 }

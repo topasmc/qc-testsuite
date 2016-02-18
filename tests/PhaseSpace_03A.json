@@ -12,7 +12,7 @@
         "phasespaces/iso_ascii.phsp"
     ],
     "output_files": {
-        "Dose.csv": "topas csv"
+        "Dose.csv": "topas binned"
     },
     "fail_strings": [
         "Unknown particle type read from phase space file"

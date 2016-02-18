@@ -11,19 +11,19 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Charge.csv": "topas csv",
-        "Dose.csv": "topas csv",
-        "DoseToMaterial.csv": "topas csv",
-        "DoseToWater.csv": "topas csv",
-        "DoseToWaterBinned.csv": "topas csv",
-        "EffectiveCharge.csv": "topas csv",
-        "EnergyDeposit.csv": "topas csv",
-        "EnergyFluence.csv": "topas csv",
-        "Fluence.csv": "topas csv",
-        "KineticEnergy.csv": "topas csv",
-        "LETd.csv": "topas csv",
-        "StepCount.csv": "topas csv",
-        "SurfaceCurrent.csv": "topas csv",
-        "SurfaceTrackCount.csv": "topas csv"
+        "Charge.csv": "topas binned",
+        "Dose.csv": "topas binned",
+        "DoseToMaterial.csv": "topas binned",
+        "DoseToWater.csv": "topas binned",
+        "DoseToWaterBinned.csv": "topas binned",
+        "EffectiveCharge.csv": "topas binned",
+        "EnergyDeposit.csv": "topas binned",
+        "EnergyFluence.csv": "topas binned",
+        "Fluence.csv": "topas binned",
+        "KineticEnergy.csv": "topas binned",
+        "LETd.csv": "topas binned",
+        "StepCount.csv": "topas binned",
+        "SurfaceCurrent.csv": "topas binned",
+        "SurfaceTrackCount.csv": "topas binned"
     }
 }

@@ -12,7 +12,7 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Dose.bin": "topas binary",
+        "Dose.bin": "topas binned",
         "Dose.binheader": null
     }
 }
