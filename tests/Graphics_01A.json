@@ -1,0 +1,12 @@
+{
+    "name": "Graphics_01A",
+    "version": 1.0,
+    "description": "Tests two simultaneous OpenGL viewers.",
+    "args": [
+        "Graphics_01A.txt"
+    ],
+    "input_files": [
+        "Graphics_01A.txt",
+        "Graphics_01.txt"
+    ]
+}

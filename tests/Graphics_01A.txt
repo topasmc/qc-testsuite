@@ -1,0 +1,12 @@
+includeFile = Graphics_01.txt
+
+#--- Viewer
+s:Gr/ViewB/Type             = "OpenGL"
+i:Gr/ViewB/WindowSizeX      = 400
+i:Gr/ViewB/WindowSizeY      = 400
+i:Gr/ViewB/WindowPosX       = 0
+i:Gr/ViewB/WindowPosY       = 400
+s:Gr/ViewB/Projection       = "Perspective"
+d:Gr/ViewB/PerspectiveAngle = 10. deg
+d:Gr/ViewB/Theta            = 45. deg
+d:Gr/ViewB/Phi              = 45. deg
