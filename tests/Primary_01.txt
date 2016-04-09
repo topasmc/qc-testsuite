@@ -1,18 +1,17 @@
 includeFile = GlobalParameters.txt
 
 #--- Source
-s:So/Other/Type                   = "Beam"
-s:So/Other/Component              = "BeamPosition"
-s:So/Other/BeamParticle           = "proton"
-d:So/Other/BeamEnergy             = 150. MeV
-u:So/Other/BeamEnergySpread       = 0.
-s:So/Other/BeamShape              = "Ellipse"
-s:So/Other/BeamXYDistribution     = "Flat"
-d:So/Other/BeamHWX                = 3. cm
-d:So/Other/BeamHWY                = 3. cm
-d:So/Other/BeamAngularSpreadX     = 0. rad
-d:So/Other/BeamAngularSpreadY     = 0. rad
-i:So/Other/NumberOfHistoriesInRun = 1000
+s:So/Other/Type                    = "Beam"
+s:So/Other/Component               = "BeamPosition"
+s:So/Other/BeamParticle            = "proton"
+d:So/Other/BeamEnergy              = 150. MeV
+u:So/Other/BeamEnergySpread        = 0.
+s:So/Other/BeamShape               = "Ellipse"
+s:So/Other/BeamXYDistribution      = "Flat"
+d:So/Other/BeamHWX                 = 3. cm
+d:So/Other/BeamHWY                 = 3. cm
+s:So/Other/BeamAngularDistribution = "None"
+i:So/Other/NumberOfHistoriesInRun  = 1000
 
 
 #--- Target (upper surface at isocenter)
