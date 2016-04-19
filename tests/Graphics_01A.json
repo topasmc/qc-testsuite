@@ -1,6 +1,6 @@
 {
     "name": "Graphics_01A",
-    "version": 1.0,
+    "version": 1.1,
     "description": "Tests two simultaneous OpenGL viewers.",
     "args": [
         "Graphics_01A.txt"

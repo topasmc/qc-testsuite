@@ -1,6 +1,6 @@
 {
     "name": "Scoring_04",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Tests a variety of filters.",
     "args": [
         "Scoring_04.txt"

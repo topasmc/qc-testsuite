@@ -1,6 +1,6 @@
 {
     "name": "Scoring_06A",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Score in a fully divided TsCylinder.",
     "args": [
         "Scoring_06A.txt"

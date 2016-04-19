@@ -1,6 +1,6 @@
 {
     "name": "Primary_01",
-    "version": 1.1,
+    "version": 2.0,
     "description": "Test a source that is not called Default.",
     "args": [
         "Primary_01.txt"

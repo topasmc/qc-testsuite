@@ -7,7 +7,7 @@ s:Gr/MyGraphic/FileName = "Geometry_03"
 #--- Geometry
 s:Ge/Box/Parent        = "World"
 s:Ge/Box/Type          = "TsBox"
-s:Ge/Box/Material      = "Water"
+s:Ge/Box/Material      = "G4_WATER"
 d:Ge/Box/HLX           = 7.0 cm
 d:Ge/Box/HLY           = 7.0 cm
 d:Ge/Box/HLZ           = 9.0 cm
@@ -24,7 +24,7 @@ i:Ge/Box/ZBins         = 5
 
 s:Ge/Cylinder/Parent   = "World"
 s:Ge/Cylinder/Type     = "TsCylinder"
-s:Ge/Cylinder/Material = "Water"
+s:Ge/Cylinder/Material = "G4_WATER"
 d:Ge/Cylinder/RMin     = 0.0 cm
 d:Ge/Cylinder/RMax     = 8.0 cm
 d:Ge/Cylinder/HL       = 10.0 cm
@@ -43,7 +43,7 @@ i:Ge/Cylinder/ZBins    = 2
 
 s:Ge/Sphere/Parent     = "World"
 s:Ge/Sphere/Type       = "TsSphere"
-s:Ge/Sphere/Material   = "Water"
+s:Ge/Sphere/Material   = "G4_WATER"
 d:Ge/Sphere/RMin       = 0.0 cm
 d:Ge/Sphere/RMax       = 10.0 cm
 d:Ge/Sphere/SPhi       = 0. deg

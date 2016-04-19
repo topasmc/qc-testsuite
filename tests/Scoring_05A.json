@@ -1,6 +1,6 @@
 {
     "name": "Scoring_05A",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Score in a TsCylinder parallel world.",
     "args": [
         "Scoring_05A.txt"

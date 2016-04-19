@@ -1,6 +1,6 @@
 {
     "name": "Scoring_05C",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Score in a TsBox parallel world with layered mass geometry.",
     "args": [
         "Scoring_05C.txt"

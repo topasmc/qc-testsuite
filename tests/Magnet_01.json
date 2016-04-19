@@ -1,6 +1,6 @@
 {
     "name": "Magnet_01",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Deflect a point source beam with a dipole magnet. Expect a deflection of about 13 cm.",
     "args": [
         "Magnet_01.txt"

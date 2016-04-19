@@ -1,6 +1,6 @@
 {
     "name": "TimeFeature_05",
-    "version": 1.0,
+    "version": 2.0,
     "description": "In random mode, apply beam current modulation to achieve a poor man's SOBP.",
     "args": [
         "TimeFeature_05.txt"

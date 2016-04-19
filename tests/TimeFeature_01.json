@@ -1,6 +1,6 @@
 {
     "name": "TimeFeature_01",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Linearly ramp up beam energy.",
     "args": [
         "TimeFeature_01.txt"

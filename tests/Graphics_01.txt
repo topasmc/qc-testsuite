@@ -1,7 +1,7 @@
 #--- Geometry
 s:Ge/Box/Type     = "TsBox"
 s:Ge/Box/Parent   = "World"
-s:Ge/Box/Material = "Water"
+s:Ge/Box/Material = "G4_WATER"
 d:Ge/Box/HLX      = 1. m
 d:Ge/Box/HLY      = 1. m
 d:Ge/Box/HLZ      = .4 m

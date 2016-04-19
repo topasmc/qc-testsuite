@@ -1,22 +1,22 @@
 includeFile = GlobalParameters.txt
 
 #--- Source
-s:So/Other/Type                    = "Beam"
-s:So/Other/Component               = "BeamPosition"
-s:So/Other/BeamParticle            = "proton"
-d:So/Other/BeamEnergy              = 150. MeV
-u:So/Other/BeamEnergySpread        = 0.
-s:So/Other/BeamShape               = "Ellipse"
-s:So/Other/BeamXYDistribution      = "Flat"
-d:So/Other/BeamHWX                 = 3. cm
-d:So/Other/BeamHWY                 = 3. cm
-s:So/Other/BeamAngularDistribution = "None"
-i:So/Other/NumberOfHistoriesInRun  = 1000
+s:So/Other/Type                     = "Beam"
+s:So/Other/Component                = "BeamPosition"
+s:So/Other/BeamParticle             = "proton"
+d:So/Other/BeamEnergy               = 150. MeV
+u:So/Other/BeamEnergySpread         = 0.
+s:So/Other/BeamPositionDistribution = "Flat"
+s:So/Other/BeamPositionCutoffShape  = "Ellipse"
+d:So/Other/BeamPositionCutoffX      = 3. cm
+d:So/Other/BeamPositionCutoffY      = 3. cm
+s:So/Other/BeamAngularDistribution  = "Point"
+i:So/Other/NumberOfHistoriesInRun   = 1000
 
 
 #--- Target (upper surface at isocenter)
 s:Ge/Phantom/Type            = "TsBox"
-s:Ge/Phantom/Material        = "Water"
+s:Ge/Phantom/Material        = "G4_WATER"
 s:Ge/Phantom/Parent          = "IsoCoordination"
 d:Ge/Phantom/HLX             = 25. cm
 d:Ge/Phantom/HLY             = 25. cm

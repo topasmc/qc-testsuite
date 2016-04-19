@@ -18,14 +18,14 @@ includeFile = GlobalParameters.txt
 
 
 #--- Source
-s:So/Default/Type                   = "Beam"
-d:So/Default/BeamEnergy             = 150.00 MeV
-u:So/Default/BeamEnergySpread       = 0.0
-s:So/Default/BeamShape              = "Point"
-d:So/Default/BeamAngularSpreadX     = 0.0 rad
-d:So/Default/BeamAngularSpreadY     = 0.0 rad
-i:So/Default/NumberOfHistoriesInRun = 1000
-s:So/Default/Component              = "BeamPosition"
+s:So/Default/Type                     = "Beam"
+s:So/Default/BeamParticle             = "proton"
+d:So/Default/BeamEnergy               = 150.00 MeV
+u:So/Default/BeamEnergySpread         = 0.0
+s:So/Default/BeamPositionDistribution = "Point"
+s:So/Default/BeamAngularDistribution  = "Point"
+i:So/Default/NumberOfHistoriesInRun   = 1000
+s:So/Default/Component                = "BeamPosition"
 
 
 #--- Magnet
@@ -50,7 +50,7 @@ d:Ge/Dipole/Strength      = 0.3 tesla
 
 #--- Target (upper surface at isocenter)
 s:Ge/Phantom/Type            = "TsBox"
-s:Ge/Phantom/Material        = "Water"
+s:Ge/Phantom/Material        = "G4_WATER"
 s:Ge/Phantom/Parent          = "IsoCoordination"
 d:Ge/Phantom/HLX             = 30.0 cm
 d:Ge/Phantom/HLY             = 30.0 cm

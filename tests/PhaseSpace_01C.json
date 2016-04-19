@@ -1,6 +1,6 @@
 {
     "name": "PhaseSpace_01C",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Write limited phasespace file.",
     "args": [
         "PhaseSpace_01C.txt"

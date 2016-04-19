@@ -1,6 +1,6 @@
 {
     "name": "Scoring_03",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Report all possible statistics.",
     "args": [
         "Scoring_03.txt"

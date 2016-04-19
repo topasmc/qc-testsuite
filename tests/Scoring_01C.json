@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01C",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Scorer output in XML format.",
     "args": [
         "Scoring_01C.txt"

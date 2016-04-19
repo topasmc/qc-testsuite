@@ -1,6 +1,6 @@
 {
     "name": "Magnet_02",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Time-dependent magnetic field. Ramp the field strength, causing the beam to sweep out a line in the scorer.",
     "args": [
         "Magnet_02.txt"

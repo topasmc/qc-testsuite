@@ -1,6 +1,6 @@
 {
     "name": "PhaseSpace_03D",
-    "version": 1.0,
+    "version": 1.1,
     "description": "Read ASCII phasespace file with additional information and use as source.",
     "args": [
         "PhaseSpace_03D.txt"

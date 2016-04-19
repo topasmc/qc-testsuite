@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Basic test shooting a 6cm diameter proton beam into a water phantom.",
     "args": [
         "Scoring_01.txt"

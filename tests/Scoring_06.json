@@ -1,6 +1,6 @@
 {
     "name": "Scoring_06",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Score in a fully divided TsBox.",
     "args": [
         "Scoring_06.txt"

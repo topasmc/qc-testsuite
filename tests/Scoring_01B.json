@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01B",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Scorer output in ROOT format.",
     "args": [
         "Scoring_01B.txt"

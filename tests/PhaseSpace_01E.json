@@ -1,6 +1,6 @@
 {
     "name": "PhaseSpace_01E",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Write binary phasespace file with additional information.",
     "args": [
         "PhaseSpace_01E.txt"

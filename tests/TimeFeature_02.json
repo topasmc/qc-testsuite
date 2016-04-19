@@ -1,6 +1,6 @@
 {
     "name": "TimeFeature_02",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Split the scorers according to the value of a time feature (beam energy).",
     "args": [
         "TimeFeature_02.txt"

@@ -1,6 +1,6 @@
 {
     "name": "TimeFeature_03",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Write scorer output after each run.",
     "args": [
         "TimeFeature_03.txt"

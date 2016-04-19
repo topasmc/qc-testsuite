@@ -1,6 +1,6 @@
 {
     "name": "Scoring_01A",
-    "version": 1.0,
+    "version": 2.0,
     "description": "Scorer output in binary format.",
     "args": [
         "Scoring_01A.txt"

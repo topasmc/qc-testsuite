@@ -14,7 +14,7 @@ s:So/Default/Component             = "World"
 
 #--- Target (upper surface at isocenter)
 s:Ge/Phantom/Type            = "TsBox"
-s:Ge/Phantom/Material        = "Water"
+s:Ge/Phantom/Material        = "G4_WATER"
 s:Ge/Phantom/Parent          = "IsoCoordination"
 d:Ge/Phantom/HLX             = 25. cm
 d:Ge/Phantom/HLY             = 25. cm
