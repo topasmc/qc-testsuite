@@ -1,0 +1,15 @@
+{
+    "name": "Primary_02",
+    "version": 1.0,
+    "description": "Test the Isotropic source type.",
+    "args": [
+        "Primary_02.txt"
+    ],
+    "input_files": [
+        "Primary_02.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Fluence.csv": "topas binned"
+    }
+}

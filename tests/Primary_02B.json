@@ -1,0 +1,16 @@
+{
+    "name": "Primary_02B",
+    "version": 1.0,
+    "description": "Use a Beam source to generate uniformly within an elliptical cone.",
+    "args": [
+        "Primary_02B.txt"
+    ],
+    "input_files": [
+        "Primary_02B.txt",
+        "Primary_02.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "Fluence.csv": "topas binned"
+    }
+}

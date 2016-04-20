@@ -16,6 +16,16 @@
         "Dose_Run_0001.csv": "topas binned",
         "Dose_Run_0002.csv": "topas binned",
         "Dose_Run_0003.csv": "topas binned",
-        "Dose_Run_0004.csv": "topas binned"
+        "Dose_Run_0004.csv": "topas binned",
+        "iso_ascii_Run_0000.header": null,
+        "iso_ascii_Run_0000.phsp": "topas ntuple",
+        "iso_ascii_Run_0001.header": null,
+        "iso_ascii_Run_0001.phsp": "topas ntuple",
+        "iso_ascii_Run_0002.header": null,
+        "iso_ascii_Run_0002.phsp": "topas ntuple",
+        "iso_ascii_Run_0003.header": null,
+        "iso_ascii_Run_0003.phsp": "topas ntuple",
+        "iso_ascii_Run_0004.header": null,
+        "iso_ascii_Run_0004.phsp": "topas ntuple"
     }
 }

@@ -16,6 +16,16 @@
         "Dose-155-160MeV_Runs_0000-0004.csv": "topas binned",
         "Dose-160-165MeV_Runs_0000-0004.csv": "topas binned",
         "Dose-165-170MeV_Runs_0000-0004.csv": "topas binned",
-        "Dose-170-175MeV_Runs_0000-0004.csv": "topas binned"
+        "Dose-170-175MeV_Runs_0000-0004.csv": "topas binned",
+        "iso_ascii-150-155MeV.header": null,
+        "iso_ascii-150-155MeV.phsp": "topas ntuple",
+        "iso_ascii-155-160MeV.header": null,
+        "iso_ascii-155-160MeV.phsp": "topas ntuple",
+        "iso_ascii-160-165MeV.header": null,
+        "iso_ascii-160-165MeV.phsp": "topas ntuple",
+        "iso_ascii-165-170MeV.header": null,
+        "iso_ascii-165-170MeV.phsp": "topas ntuple",
+        "iso_ascii-170-175MeV.header": null,
+        "iso_ascii-170-175MeV.phsp": "topas ntuple"
     }
 }

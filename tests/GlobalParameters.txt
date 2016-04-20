@@ -3,7 +3,7 @@
 
 #Fixed Reference system (If, Io) => World volume
 #Gantry coordination system (Ig) => GantryCoordination
-#Source coordination system (S)  => BeamPosition rotateX(180), 
+#Source coordination system (S)  => BeamPosition rotateX(180),
 #Z position w.r.t GantryCoordination
 #Beam source coordinate system rotate 180 and translate along z w.r.t g.
 #-> Y is -Y. we have to flip phase space data.
@@ -42,8 +42,9 @@ d:Ge/BeamPosition/RotZ     = 0. deg
 
 
 #---- Sequence
-b:Ts/ShowCPUTime = "True"
+b:Ts/ShowCPUTime                = "True"
 i:Ts/ShowHistoryCountAtInterval = 1000000
-i:Ts/Seed = 5
+i:Ts/Seed                       = 5
+i:Ts/NumberOfThreads            = 0
 
 #includeFile = Viewer.txt

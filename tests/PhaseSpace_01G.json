@@ -1,0 +1,17 @@
+{
+    "name": "PhaseSpace_01G",
+    "version": 2.0,
+    "description": "Write ROOT phasespace file with additional information.",
+    "args": [
+        "PhaseSpace_01G.txt"
+    ],
+    "input_files": [
+        "PhaseSpace_01G.txt",
+        "PhaseSpace_01F.txt",
+        "PhaseSpace_01A.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "topas.root": null
+    }
+}

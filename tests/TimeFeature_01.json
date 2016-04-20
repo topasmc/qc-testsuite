@@ -11,6 +11,8 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Dose_Runs_0000-0004.csv": "topas binned"
+        "Dose_Runs_0000-0004.csv": "topas binned",
+        "iso_ascii.header": null,
+        "iso_ascii.phsp": "topas ntuple"
     }
 }
