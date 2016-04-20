@@ -45,6 +45,5 @@ d:Ge/BeamPosition/RotZ     = 0. deg
 b:Ts/ShowCPUTime                = "True"
 i:Ts/ShowHistoryCountAtInterval = 1000000
 i:Ts/Seed                       = 5
-i:Ts/NumberOfThreads            = 0
 
 #includeFile = Viewer.txt
