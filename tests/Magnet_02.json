@@ -11,6 +11,6 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "SurfaceTracks_Runs_0000-0004.csv": "topas binned"
+        "SurfaceTracks.csv": "topas binned"
     }
 }
