@@ -10,7 +10,7 @@ s:So/Default/BeamPositionCutoffShape  = "Ellipse"
 s:So/Default/BeamPositionDistribution = "Flat"
 d:So/Default/BeamPositionCutoffX      = 3. cm
 d:So/Default/BeamPositionCutoffY      = 3. cm
-s:So/Default/BeamAngularDistribution  = "Point"
+s:So/Default/BeamAngularDistribution  = "None"
 i:So/Default/NumberOfHistoriesInRun   = 1000
 
 

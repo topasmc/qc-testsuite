@@ -22,8 +22,8 @@ s:So/Default/Type                     = "Beam"
 s:So/Default/BeamParticle             = "proton"
 d:So/Default/BeamEnergy               = 150.00 MeV
 u:So/Default/BeamEnergySpread         = 0.0
-s:So/Default/BeamPositionDistribution = "Point"
-s:So/Default/BeamAngularDistribution  = "Point"
+s:So/Default/BeamPositionDistribution = "None"
+s:So/Default/BeamAngularDistribution  = "None"
 i:So/Default/NumberOfHistoriesInRun   = 1000
 s:So/Default/Component                = "BeamPosition"
 
