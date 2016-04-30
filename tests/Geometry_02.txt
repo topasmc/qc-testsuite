@@ -1,4 +1,4 @@
-# Details are given in the TOPAS User Guide and in 
+# Details are given in the TOPAS User Guide and in
 # chapter 4 of the Geant4 Application Developer's Guide
 # http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/ch04.html#sect.Geom.Solids
 
@@ -9,37 +9,37 @@ s:Gr/MyGraphic/FileName = "Geometry_02"
 
 
 # Box
-s:Ge/DemoG4Box/Type                  = "G4Box"
-s:Ge/DemoG4Box/Parent                = "World"
-s:Ge/DemoG4Box/Material              = "Air"
-d:Ge/DemoG4Box/TransX                = 0 cm
-d:Ge/DemoG4Box/TransY                = 0 cm
-d:Ge/DemoG4Box/TransZ                = 0 cm
-d:Ge/DemoG4Box/RotX                  = 0 deg
-d:Ge/DemoG4Box/RotY                  = 0 deg
-d:Ge/DemoG4Box/RotZ                  = 0 deg
-d:Ge/DemoG4Box/HLX                   = 30. mm
-d:Ge/DemoG4Box/HLY                   = 40. mm
-d:Ge/DemoG4Box/HLZ                   = 60. mm
-s:Ge/DemoG4Box/Color                 = "white"
+s:Ge/DemoBox/Type                  = "TsBox"
+s:Ge/DemoBox/Parent                = "World"
+s:Ge/DemoBox/Material              = "Air"
+d:Ge/DemoBox/TransX                = 0 cm
+d:Ge/DemoBox/TransY                = 0 cm
+d:Ge/DemoBox/TransZ                = 0 cm
+d:Ge/DemoBox/RotX                  = 0 deg
+d:Ge/DemoBox/RotY                  = 0 deg
+d:Ge/DemoBox/RotZ                  = 0 deg
+d:Ge/DemoBox/HLX                   = 30. mm
+d:Ge/DemoBox/HLY                   = 40. mm
+d:Ge/DemoBox/HLZ                   = 60. mm
+s:Ge/DemoBox/Color                 = "white"
 
-# Tubs -- Cylindrical section or Tube
-s:Ge/DemoTubs/Type                   = "G4Tubs"
-s:Ge/DemoTubs/Parent                 = "World"
-s:Ge/DemoTubs/Material               = "Air"
-d:Ge/DemoTubs/TransX                 = 0 cm
-d:Ge/DemoTubs/TransY                 = 0 cm
-d:Ge/DemoTubs/TransZ                 = 12 cm
-d:Ge/DemoTubs/RotX                   = 0 deg
-d:Ge/DemoTubs/RotY                   = 0 deg
-d:Ge/DemoTubs/RotZ                   = 0 deg
-d:Ge/DemoTubs/RMin                   = 10 mm
-d:Ge/DemoTubs/RMax                   = 15 mm
-d:Ge/DemoTubs/HL                     = 20 mm
-d:Ge/DemoTubs/SPhi                   = 1. rad
-d:Ge/DemoTubs/DPhi                   = 1.5 rad
-s:Ge/DemoTubs/Color                  = "lightblue"
-s:Ge/DemoTubs/DrawingStyle           = "FullWireFrame"
+# Cylinder -- Cylindrical section or Tube
+s:Ge/DemoTube/Type                   = "TsCylinder"
+s:Ge/DemoTube/Parent                 = "World"
+s:Ge/DemoTube/Material               = "Air"
+d:Ge/DemoTube/TransX                 = 0 cm
+d:Ge/DemoTube/TransY                 = 0 cm
+d:Ge/DemoTube/TransZ                 = 12 cm
+d:Ge/DemoTube/RotX                   = 0 deg
+d:Ge/DemoTube/RotY                   = 0 deg
+d:Ge/DemoTube/RotZ                   = 0 deg
+d:Ge/DemoTube/RMin                   = 10 mm
+d:Ge/DemoTube/RMax                   = 15 mm
+d:Ge/DemoTube/HL                     = 20 mm
+d:Ge/DemoTube/SPhi                   = 1. rad
+d:Ge/DemoTube/DPhi                   = 1.5 rad
+s:Ge/DemoTube/Color                  = "lightblue"
+s:Ge/DemoTube/DrawingStyle           = "FullWireFrame"
 
 # CutTubs -- Cylindrical Cut Section or Cut Tube
 s:Ge/DemoCutTubs/Type                = "G4CutTubs"
@@ -156,7 +156,7 @@ d:Ge/DemoGTrap/Alp2                  = 10 deg
 s:Ge/DemoGTrap/Color                 = "indigo"
 
 # Sphere -- Spherical Shell Section
-s:Ge/DemoSphere/Type                 = "G4Sphere"
+s:Ge/DemoSphere/Type                 = "TsSphere"
 s:Ge/DemoSphere/Parent               = "World"
 s:Ge/DemoSphere/Material             = "Air"
 d:Ge/DemoSphere/TransX               = 0 cm
