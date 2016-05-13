@@ -1,7 +1,7 @@
 {
     "name": "Scoring_06A",
     "version": 2.0,
-    "description": "Score in a fully divided TsCylinder.",
+    "description": "Score in a fully divided TsCylinder (volume and surface scorers test different code).",
     "args": [
         "Scoring_06A.txt"
     ],
@@ -11,6 +11,7 @@
         "GlobalParameters.txt"
     ],
     "output_files": {
-        "Dose.csv": "topas binned"
+        "Dose.csv": "topas binned",
+        "SurfaceCurrent.csv": "topas binned"
     }
 }
