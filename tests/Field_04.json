@@ -1,0 +1,15 @@
+{
+    "name": "Field_04",
+    "version": 2.0,
+    "description": "Deflect a point source beam with a parallel plate electric field. Expect a deflection of about 13 cm.",
+    "args": [
+        "Field_04.txt"
+    ],
+    "input_files": [
+        "Field_04.txt",
+        "GlobalParameters.txt"
+    ],
+    "output_files": {
+        "SurfaceTracks.csv": "topas binned"
+    }
+}

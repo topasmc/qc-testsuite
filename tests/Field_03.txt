@@ -36,21 +36,21 @@ s:So/Default/Component                = "BeamPosition"
 
 
 #--- Magnet
-s:Ge/Quadrupole/Type          = "TsBox"
-s:Ge/Quadrupole/MagneticField = "Quadrupole"
-s:Ge/Quadrupole/Parent        = "GantryCoordination"
-s:Ge/Quadrupole/Material      = "Air"
-d:Ge/Quadrupole/HLX           = 30 cm
-d:Ge/Quadrupole/HLY           = 30 cm
-d:Ge/Quadrupole/HLZ           = 20 cm
-d:Ge/Quadrupole/TransX        = 0.0 cm
-d:Ge/Quadrupole/TransY        = 0.0 cm
-d:Ge/Quadrupole/TransZ        = 0.5 * Ge/BeamPosition/TransZ m
-d:Ge/Quadrupole/RotX          = 0.0 deg
-d:Ge/Quadrupole/RotY          = 0.0 deg
-d:Ge/Quadrupole/RotZ          = 0.0 deg
-d:Ge/Quadrupole/MagneticFieldGradientX     = 0.061 tesla/cm
-d:Ge/Quadrupole/MagneticFieldGradientY     = 0.0 tesla/cm
+s:Ge/Quadrupole/Type                   = "TsBox"
+s:Ge/Quadrupole/MagneticField          = "Quadrupole"
+s:Ge/Quadrupole/Parent                 = "GantryCoordination"
+s:Ge/Quadrupole/Material               = "Air"
+d:Ge/Quadrupole/HLX                    = 30 cm
+d:Ge/Quadrupole/HLY                    = 30 cm
+d:Ge/Quadrupole/HLZ                    = 20 cm
+d:Ge/Quadrupole/TransX                 = 0.0 cm
+d:Ge/Quadrupole/TransY                 = 0.0 cm
+d:Ge/Quadrupole/TransZ                 = 0.5 * Ge/BeamPosition/TransZ m
+d:Ge/Quadrupole/RotX                   = 0.0 deg
+d:Ge/Quadrupole/RotY                   = 0.0 deg
+d:Ge/Quadrupole/RotZ                   = 0.0 deg
+d:Ge/Quadrupole/MagneticFieldGradientX = 0.061 tesla/cm
+d:Ge/Quadrupole/MagneticFieldGradientY = 0.0 tesla/cm
 
 
 #--- Target (upper surface at isocenter)

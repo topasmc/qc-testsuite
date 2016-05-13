@@ -1,12 +1,12 @@
 {
-    "name": "Magnet_03",
+    "name": "Field_03",
     "version": 2.0,
     "description": "Focus a divergent point source beam with a quadrupole magnet. Field gradient is tuned to approximately focus upon the isocenter.",
     "args": [
-        "Magnet_03.txt"
+        "Field_03.txt"
     ],
     "input_files": [
-        "Magnet_03.txt",
+        "Field_03.txt",
         "GlobalParameters.txt"
     ],
     "output_files": {

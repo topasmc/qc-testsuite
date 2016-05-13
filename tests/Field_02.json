@@ -1,13 +1,13 @@
 {
-    "name": "Magnet_02",
+    "name": "Field_02",
     "version": 2.0,
     "description": "Time-dependent magnetic field. Ramp the field strength, causing the beam to sweep out a line in the scorer.",
     "args": [
-        "Magnet_02.txt"
+        "Field_02.txt"
     ],
     "input_files": [
-        "Magnet_02.txt",
-        "Magnet_01.txt",
+        "Field_02.txt",
+        "Field_01.txt",
         "GlobalParameters.txt"
     ],
     "output_files": {

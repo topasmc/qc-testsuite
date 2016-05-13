@@ -1,0 +1,75 @@
+includeFile = GlobalParameters.txt
+
+
+# Analytical calculation
+# ----------------------
+# Electrostatic deflection causes a displacement of
+#     y = qEl/2T * (d+l/2)
+#
+# where q = proton charge
+#       E = electric field strength (Ge/Plates/ElectricFieldStrength)
+#       l = length of parallel plates (2*Ge/Plates/HLZ)
+#       T = initial kinetic energy of proton (So/Default/BeamEnergy)
+#       d = distance from deflection to target (Ge/Plates/TransZ - Ge/Plates/HLZ)
+#
+# ==> 13 cm displacement at isocenter
+
+
+#--- Source
+s:So/Default/Type                     = "Beam"
+s:So/Default/BeamParticle             = "proton"
+d:So/Default/BeamEnergy               = 150.00 MeV
+u:So/Default/BeamEnergySpread         = 0.0
+s:So/Default/BeamPositionDistribution = "None"
+s:So/Default/BeamAngularDistribution  = "None"
+i:So/Default/NumberOfHistoriesInRun   = 1000
+s:So/Default/Component                = "BeamPosition"
+
+
+#--- Field
+s:Ge/Plates/Type                    = "TsBox"
+s:Ge/Plates/Parent                  = "GantryCoordination"
+s:Ge/Plates/Material                = "Air"
+d:Ge/Plates/HLX                     = 10 cm
+d:Ge/Plates/HLY                     = 10 cm
+d:Ge/Plates/HLZ                     = 20 cm
+d:Ge/Plates/TransX                  = 0.0 cm
+d:Ge/Plates/TransY                  = 0.0 cm
+d:Ge/Plates/TransZ                  = 2.0 m + Ge/Plates/HLZ
+d:Ge/Plates/RotX                    = 0.0 deg
+d:Ge/Plates/RotY                    = 0.0 deg
+d:Ge/Plates/RotZ                    = 0.0 deg
+s:Ge/Plates/ElectroMagneticField    = "Uniform"
+u:Ge/Plates/ElectricFieldDirectionX = 0.0
+u:Ge/Plates/ElectricFieldDirectionY = 1.0
+u:Ge/Plates/ElectricFieldDirectionZ = 0.0
+d:Ge/Plates/ElectricFieldStrength   = 443 kV/cm
+u:Ge/Plates/MagneticFieldDirectionX = 0.0
+u:Ge/Plates/MagneticFieldDirectionY = 0.0
+u:Ge/Plates/MagneticFieldDirectionZ = 0.0
+d:Ge/Plates/MagneticFieldStrength   = 0.0 tesla
+
+
+#--- Target (upper surface at isocenter)
+s:Ge/Phantom/Type            = "TsBox"
+s:Ge/Phantom/Material        = "G4_WATER"
+s:Ge/Phantom/Parent          = "IsoCoordination"
+d:Ge/Phantom/HLX             = 20.0 cm
+d:Ge/Phantom/HLY             = 20.0 cm
+d:Ge/Phantom/HLZ             = 20.0 cm
+d:Ge/Phantom/TransX          = 0. m
+d:Ge/Phantom/TransY          = 0. m
+d:Ge/Phantom/TransZ          = -1.0 * Ge/Phantom/HLZ cm
+d:Ge/Phantom/RotX            = 0. deg
+d:Ge/Phantom/RotY            = 0. deg
+d:Ge/Phantom/RotZ            = 0. deg
+i:Ge/Phantom/XBins           = 10
+i:Ge/Phantom/YBins           = 10
+i:Ge/Phantom/ZBins           = 1
+s:Sc/Phantom/UpstreamSurface = "Phantom/ZPlusSurface"
+
+
+#--- Scoring
+s:Sc/SurfaceTracks/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/SurfaceTracks/Quantity                  = "SurfaceTrackCount"
+s:Sc/SurfaceTracks/Surface                   = Sc/Phantom/UpstreamSurface
