@@ -11,4 +11,4 @@ d:Tf/DipoleStrength/Rate               = 0.1 tesla/ms
 d:Tf/DipoleStrength/StartValue         = 0. tesla
 d:Tf/DipoleStrength/RepetitionInterval = 10. s
 
-d:Ge/Dipole/Strength = Tf/DipoleStrength/Value tesla
+d:Ge/Dipole/MagneticFieldStrength = Tf/DipoleStrength/Value tesla

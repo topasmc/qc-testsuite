@@ -6,7 +6,7 @@ includeFile = GlobalParameters.txt
 # quadrupole focal length, f = p/qgl
 # where p = proton momentum
 #       q = proton charge
-#       g = magnetic field gradient (Ge/Quadrupole/GradientX)
+#       g = magnetic field gradient (Ge/Quadrupole/MagneticFieldGradientX)
 #       l = length of quadrupole (2*Ge/Quadrupole/HLZ)
 #
 # optics says 1/f = 1/u + 1/v
@@ -49,8 +49,8 @@ d:Ge/Quadrupole/TransZ        = 0.5 * Ge/BeamPosition/TransZ m
 d:Ge/Quadrupole/RotX          = 0.0 deg
 d:Ge/Quadrupole/RotY          = 0.0 deg
 d:Ge/Quadrupole/RotZ          = 0.0 deg
-d:Ge/Quadrupole/GradientX     = 0.061 tesla/cm
-d:Ge/Quadrupole/GradientY     = 0.0 tesla/cm
+d:Ge/Quadrupole/MagneticFieldGradientX     = 0.061 tesla/cm
+d:Ge/Quadrupole/MagneticFieldGradientY     = 0.0 tesla/cm
 
 
 #--- Target (upper surface at isocenter)

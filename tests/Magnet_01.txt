@@ -6,7 +6,7 @@ includeFile = GlobalParameters.txt
 # deflection angle is approximately theta = qBl/p
 # neglecting how curvature of path within dipole adds to period of deflection
 # where q = proton charge
-#       B = magnetic field strength (Ge/Dipole/Strength)
+#       B = magnetic field strength (Ge/Dipole/MagneticFieldStrength)
 #       l = length of dipole (2*Ge/Dipole/HLZ)
 #       p = proton momentum
 #
@@ -42,10 +42,10 @@ d:Ge/Dipole/TransZ        = 2.0 m + Ge/Dipole/HLZ
 d:Ge/Dipole/RotX          = 0.0 deg
 d:Ge/Dipole/RotY          = 0.0 deg
 d:Ge/Dipole/RotZ          = 0.0 deg
-u:Ge/Dipole/DirectionX    = 0.0
-u:Ge/Dipole/DirectionY    = 1.0
-u:Ge/Dipole/DirectionZ    = 0.0
-d:Ge/Dipole/Strength      = 0.3 tesla
+u:Ge/Dipole/MagneticFieldDirectionX    = 0.0
+u:Ge/Dipole/MagneticFieldDirectionY    = 1.0
+u:Ge/Dipole/MagneticFieldDirectionZ    = 0.0
+d:Ge/Dipole/MagneticFieldStrength      = 0.3 tesla
 
 
 #--- Target (upper surface at isocenter)
