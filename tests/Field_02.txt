@@ -1,4 +1,4 @@
-includeFile = Magnet_01.txt
+includeFile = Field_01.txt
 
 #--- Timeline
 d:Tf/TimelineEnd             = 5. ms
