@@ -37,7 +37,7 @@ s:So/Default/Component                = "BeamPosition"
 
 #--- Magnet
 s:Ge/Quadrupole/Type                   = "TsBox"
-s:Ge/Quadrupole/MagneticField          = "Quadrupole"
+s:Ge/Quadrupole/Field                  = "QuadrupoleMagnet"
 s:Ge/Quadrupole/Parent                 = "GantryCoordination"
 s:Ge/Quadrupole/Material               = "Air"
 d:Ge/Quadrupole/HLX                    = 30 cm

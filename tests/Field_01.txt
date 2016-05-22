@@ -30,7 +30,7 @@ s:So/Default/Component                = "BeamPosition"
 
 #--- Magnet
 s:Ge/Dipole/Type                    = "TsBox"
-s:Ge/Dipole/MagneticField           = "Dipole"
+s:Ge/Dipole/Field                   = "DipoleMagnet"
 s:Ge/Dipole/Parent                  = "GantryCoordination"
 s:Ge/Dipole/Material                = "Air"
 d:Ge/Dipole/HLX                     = 10 cm
