@@ -14,6 +14,7 @@
         "Charge.csv": "topas binned",
         "Dose.csv": "topas binned",
         "DoseToMaterial.csv": "topas binned",
+        "DoseToMaterialBinned.csv": "topas binned",
         "DoseToWater.csv": "topas binned",
         "DoseToWaterBinned.csv": "topas binned",
         "EffectiveCharge.csv": "topas binned",

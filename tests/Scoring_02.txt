@@ -1,20 +1,5 @@
 includeFile = Scoring_01.txt
 
-# A tiny volume is needed to score DoseToMaterial.
-# A box is placed off the beam axis and consists of lead
-s:Ge/BoxForDoseToMaterial/Type     = "TsBox"
-s:Ge/BoxForDoseToMaterial/Material = Sc/DoseToMaterial/Material
-s:Ge/BoxForDoseToMaterial/Parent   = "IsoCoordination"
-d:Ge/BoxForDoseToMaterial/HLX      = 0.5 mm
-d:Ge/BoxForDoseToMaterial/HLY      = 0.5 mm
-d:Ge/BoxForDoseToMaterial/HLZ      = 0.5 mm
-d:Ge/BoxForDoseToMaterial/TransX   = 10. * Ge/Phantom/HLX cm
-d:Ge/BoxForDoseToMaterial/TransY   = 10. * Ge/Phantom/HLY cm
-d:Ge/BoxForDoseToMaterial/TransZ   = 0. cm
-d:Ge/BoxForDoseToMaterial/RotX     = 0. deg
-d:Ge/BoxForDoseToMaterial/RotY     = 0. deg
-d:Ge/BoxForDoseToMaterial/RotZ     = 0. deg
-
 
 #--- Scoring
 s:Sc/Charge/IfOutputFileAlreadyExists            = "Overwrite"
@@ -30,13 +15,20 @@ s:Sc/DoseToMaterial/Quantity                     = "DoseToMaterial"
 s:Sc/DoseToMaterial/Material                     = "Lead"
 s:Sc/DoseToMaterial/Component                    = "Phantom"
 
+s:Sc/DoseToMaterialBinned/IfOutputFileAlreadyExists       = "Overwrite"
+s:Sc/DoseToMaterialBinned/Quantity                        = "DoseToMaterial"
+s:Sc/DoseToMaterialBinned/Material                        = "Lead"
+s:Sc/DoseToMaterialBinned/Component                       = "Phantom"
+b:Sc/DoseToMaterialBinned/PreCalculateStoppingPowerRatios = "True"
+
 s:Sc/DoseToWater/IfOutputFileAlreadyExists       = "Overwrite"
 s:Sc/DoseToWater/Quantity                        = "DoseToWater"
 s:Sc/DoseToWater/Component                       = "Phantom"
 
-s:Sc/DoseToWaterBinned/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/DoseToWaterBinned/Quantity                  = "DoseToWaterBinned"
-s:Sc/DoseToWaterBinned/Component                 = "Phantom"
+s:Sc/DoseToWaterBinned/IfOutputFileAlreadyExists       = "Overwrite"
+s:Sc/DoseToWaterBinned/Quantity                        = "DoseToWater"
+s:Sc/DoseToWaterBinned/Component                       = "Phantom"
+b:Sc/DoseToWaterBinned/PreCalculateStoppingPowerRatios = "True"
 
 s:Sc/EffectiveCharge/IfOutputFileAlreadyExists   = "Overwrite"
 s:Sc/EffectiveCharge/Quantity                    = "EffectiveCharge"
