@@ -35,7 +35,6 @@ d:Ge/Phantom/TransZ    = 0 cm
 d:Ge/Phantom/RotX      = 0 deg
 d:Ge/Phantom/RotY      = 0 deg
 d:Ge/Phantom/RotZ      = 0 deg
-i:Ge/Phantom/RBins     = 100
 
 #########################
 # Nozzle
