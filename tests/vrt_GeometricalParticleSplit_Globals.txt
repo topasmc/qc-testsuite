@@ -161,7 +161,7 @@ d:Ge/BeamPosition/TransZ = -60. cm
 ##########################
 # Visualization
 ##########################
-i:Ts/NumberOfThreads = 12
+i:Ts/NumberOfThreads = 0
 b:Gr/Enable                     = "False"
 s:Gr/viewer/Type                = "HepRep"
 u:Gr/viewer/Zoom                = 0.5

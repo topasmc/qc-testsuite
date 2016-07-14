@@ -3,7 +3,7 @@
 #########################
 d:Ge/subComponent/Thickness     = 20 cm
 d:Ge/subComponent/HalfLength    = 1 m
-d:Ge/subComponent/StartPosition = 1 m 
+d:Ge/subComponent/StartPosition = 1 m
 
 s:Ge/VrtWorld = "World"
 
@@ -155,11 +155,11 @@ d:Ge/target/HL                 = 4 cm
 s:Ge/Scorer/Type        = "TsBox"
 s:Ge/Scorer/Parent      = "World"
 b:Ge/Scorer/IsParallel  = "True"
-d:Ge/Scorer/HLX         = Ge/subComponent/HalfLength m 
-d:Ge/Scorer/HLY         = Ge/subComponent/HalfLength m 
+d:Ge/Scorer/HLX         = Ge/subComponent/HalfLength m
+d:Ge/Scorer/HLY         = Ge/subComponent/HalfLength m
 d:Ge/Scorer/HLZ1        = 10.0 * Ge/subComponent/Thickness m
 d:Ge/Scorer/HLZ         = 0.5 * Ge/Scorer/HLZ1 m
-d:Ge/Scorer/TransZ      = 1 m + Ge/Scorer/HLZ  
+d:Ge/Scorer/TransZ      = 1 m + Ge/Scorer/HLZ
 s:Ge/Scorer/Color       = "red"
 
 s:Sc/Scorer/Quantity                  = "DoseToMedium"
@@ -184,9 +184,9 @@ i:So/Default/NumberOfHistoriesInRun   = 10
 d:Ge/BeamPosition/TransZ = -1.0 * Ge/target/HL cm
 d:Ge/BeamPosition/RotX   = 0 deg
 
-i:Ts/NumberOfThreads = 12
+i:Ts/NumberOfThreads = 0
 b:Ge/World/Invisible = "True"
-b:Gr/Enable                     = "False" 
+b:Gr/Enable                     = "False"
 s:Gr/viewer/Type                = "OpenGl"
 u:Gr/viewer/Zoom                = 2
 i:Gr/viewer/WindowSizeX         = 900
