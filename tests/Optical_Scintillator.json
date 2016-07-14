@@ -1,0 +1,19 @@
+{
+    "name": "Optical_Scintillator",
+    "version": 3.0,
+    "description": "Scintillation process produced by protons in plastic material",
+    "args": [
+        "Optical_Scintillator.txt"
+    ],
+    "input_files": [
+        "Optical_Scintillator.txt",
+        "Optical_Materials.txt",
+        "Optical_Globals.txt"
+    ],
+    "output_files": {
+        "Optical_Scintillator_In.phsp": "topas ntuple",
+        "Optical_Scintillator_In.header": null,
+        "Optical_Scintillator_Out.phsp": "topas ntuple",
+        "Optical_Scintillator_Out.header": null
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Scoring_07",
+    "version": 3.0,
+    "description": "Show how to count optical photons via optical surface properties",
+    "args": [
+        "Scoring_07.txt"
+    ],
+    "input_files": [
+        "Scoring_07.txt",
+        "Optical_Materials.txt",
+        "Optical_Globals.txt"
+    ],
+    "output_files": {
+        "Scoring_07.phsp": "topas ntuple",
+        "Scoring_07.header": null
+    }
+}

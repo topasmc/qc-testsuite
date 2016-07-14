@@ -1,0 +1,19 @@
+{
+    "name": "Optical_Surfaces",
+    "version": 3.0,
+    "description": "Optical surfaces to confine the track of optical photons in components",
+    "args": [
+        "Optical_Surfaces.txt"
+    ],
+    "input_files": [
+        "Optical_Surfaces.txt",
+        "Optical_Materials.txt",
+        "Optical_Globals.txt"
+    ],
+    "output_files": {
+        "Optical_Surfaces_In.phsp": "topas ntuple",
+        "Optical_Surfaces_In.header": null,
+        "Optical_Surfaces_Out.phsp": "topas ntuple",
+        "Optical_Surfaces_Out.header": null
+    }
+}
