@@ -1,0 +1,15 @@
+{
+    "name": "vrt_Shielding_WeightW_Parallel",
+    "version": 3.0,
+    "description": "Particle split and weight window roulette in parallel geometry.",
+    "args": [
+        "vrt_Shielding_WeightW_Parallel.txt"
+    ],
+    "input_files": [
+        "vrt_Shielding_WeightW_Parallel.txt",
+        "vrt_Shielding_Globals.txt"
+    ],
+    "output_files": {
+        "vrt_Shielding_WeightW_Parallel.csv": "topas binned"
+    }
+}

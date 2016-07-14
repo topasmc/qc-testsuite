@@ -1,0 +1,15 @@
+{
+    "name": "vrt_KillOtherParticles",
+    "version": 3.0,
+    "description": "Early termination of secondaries to speed up. This is not a VRT",
+    "args": [
+        "vrt_KillOtherParticles.txt"
+    ],
+    "input_files": [
+        "vrt_KillOtherParticles.txt",
+        "vrt_GeometricalParticleSplit_Globals.txt"
+    ],
+    "output_files": {
+        "vrt_KillOtherParticles.csv": "topas binned"
+    }
+}

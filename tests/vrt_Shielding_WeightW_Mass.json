@@ -1,0 +1,15 @@
+{
+    "name": "vrt_Shielding_WeightW_Mass",
+    "version": 3.0,
+    "description": "Particle split and weight window roulette in mass geometry.",
+    "args": [
+        "vrt_Shielding_WeightW_Mass.txt"
+    ],
+    "input_files": [
+        "vrt_Shielding_WeightW_Mass.txt",
+        "vrt_Shielding_Globals.txt"
+    ],
+    "output_files": {
+        "vrt_Shielding_WeightW_Mass.csv": "topas binned"
+    }
+}

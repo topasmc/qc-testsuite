@@ -1,0 +1,15 @@
+{
+    "name": "vrt_Shielding_ImpSamp_Mass",
+    "version": 3.0,
+    "description": "Particle split and importance sampling in mass geometries.",
+    "args": [
+        "vrt_Shielding_ImpSamp_Mass.txt"
+    ],
+    "input_files": [
+        "vrt_Shielding_ImpSamp_Mass.txt",
+        "vrt_Shielding_Globals.txt"
+    ],
+    "output_files": {
+        "vrt_Shielding_ImpSamp_Mass.csv": "topas binned"
+    }
+}
