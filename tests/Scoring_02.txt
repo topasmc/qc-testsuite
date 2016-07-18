@@ -77,8 +77,8 @@ s:Sc/StepCount/Component                         = "Phantom"
 
 s:Sc/SurfaceCurrent/IfOutputFileAlreadyExists    = "Overwrite"
 s:Sc/SurfaceCurrent/Quantity                     = "SurfaceCurrent"
-s:Sc/SurfaceCurrent/Surface                      = Sc/Phantom/UpstreamSurface
+s:Sc/SurfaceCurrent/Surface                      = Ge/Phantom/UpstreamSurface
 
 s:Sc/SurfaceTrackCount/IfOutputFileAlreadyExists = "Overwrite"
 s:Sc/SurfaceTrackCount/Quantity                  = "SurfaceTrackCount"
-s:Sc/SurfaceTrackCount/Surface                   = Sc/Phantom/UpstreamSurface
+s:Sc/SurfaceTrackCount/Surface                   = Ge/Phantom/UpstreamSurface

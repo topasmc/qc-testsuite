@@ -14,9 +14,9 @@ d:Tf/BeamEnergy/StartValue         = 150. MeV
 d:Tf/BeamEnergy/RepetitionInterval = 10. s
 
 
-#--- Scoring (Dose scorer inherited from Scoring_01.txt)
+#--- Scoring
 s:Sc/PHSP/Quantity                  = "PhaseSpace"
-s:Sc/PHSP/Surface                   = Sc/Phantom/UpstreamSurface
+s:Sc/PHSP/Surface                   = Ge/Phantom/UpstreamSurface
 s:Sc/PHSP/OutputType                = "ASCII"
 s:Sc/PHSP/OutputFile                = "iso_ascii"
 s:Sc/PHSP/IfOutputFileAlreadyExists = "Overwrite"

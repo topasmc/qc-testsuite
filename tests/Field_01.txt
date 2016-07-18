@@ -64,10 +64,10 @@ d:Ge/Phantom/RotZ            = 0. deg
 i:Ge/Phantom/XBins           = 10
 i:Ge/Phantom/YBins           = 10
 i:Ge/Phantom/ZBins           = 1
-s:Sc/Phantom/UpstreamSurface = "Phantom/ZPlusSurface"
+s:Ge/Phantom/UpstreamSurface = "Phantom/ZPlusSurface"
 
 
 #--- Scoring
 s:Sc/SurfaceTracks/IfOutputFileAlreadyExists = "Overwrite"
 s:Sc/SurfaceTracks/Quantity                  = "SurfaceTrackCount"
-s:Sc/SurfaceTracks/Surface                   = Sc/Phantom/UpstreamSurface
+s:Sc/SurfaceTracks/Surface                   = Ge/Phantom/UpstreamSurface
