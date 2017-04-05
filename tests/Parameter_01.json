@@ -9,6 +9,6 @@
         "Parameter_01.txt"
     ],
     "output_files": {
-        "TopasParameterDump_Run0000.html": "default"
+        "TopasParameterDump_Run_0000.html": "default"
     }
 }
