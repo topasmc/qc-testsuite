@@ -6,7 +6,7 @@
         "Field_04.txt"
     ],
     "input_files": [
-        "Field_03.txt",
+        "Field_04.txt",
         "GlobalParameters.txt"
     ],
     "output_files": {
